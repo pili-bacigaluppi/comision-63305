@@ -128,9 +128,7 @@ footer p{
     background-size: 100%;
     display: flex;
     align-items: center;
-}
-.articleUno img{
-    width: 700px;
+    justify-content: center;
 }
 .botonIndex{
     background-color: #DED3CD;
@@ -150,16 +148,16 @@ footer p{
     gap: 2.5rem;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 30px;
 }
 .galeria{
     display: flex;
-    gap: 1.5625rem;
-
+    gap: 5%;
 }
-.imgGaleria{
-    width: 25rem;
-    height: 25rem;
+.imgGaleria1, .imgGaleria2{
+    width: 30%;
+    height: 30%;
+
 }
 .lineaIndex{
     width: 441.68px;
@@ -176,15 +174,15 @@ aside{
     justify-content: center;
 }
 aside h2{
-    color: #86707E  ;
-    font-weight: 900;
-    font-size: 2.25rem;
+    color: #DED3CD  ;
+    font-weight: 600;
+    font-size: 2.4rem;
 }
 aside .botonIndex{
-    background-color: #7B6674;
-    color: #eeeeee;
+    background-color: #DED3CD;
+    color: #574964;
     border-radius: 15px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     width: 41.875rem;
 }
 .reseñas{
@@ -534,8 +532,6 @@ aside .botonIndex{
         justify-content: space-between;
     }
     .navbar img{
-        height: 100%;
-        width: 10rem;
         margin-left: 15px;
     }
     a{
@@ -547,15 +543,21 @@ aside .botonIndex{
         padding: 50px;;
     }
     h1{
-        font-size: 50px;
-        margin-left: 5px;
+        font-size: 45px;
+        width: 100%;
+    }
+    .alfajorHidden{
+        display: none;
     }
     .botonIndex{
         font-size: 15px;
         padding: 20px 30px 20px 30px;
     }
-    .alfajorHidden{
-        display: inline;
+    .tituloGaleria{
+        display: none;
+    }
+    .lineaIndex{
+        border: 1px solid #574964 ;
     }
     .sectionNosotrosUno{
         grid-template-columns: repeat(8, 5.8125rem);
@@ -584,12 +586,15 @@ aside .botonIndex{
 }
 
 /*MEDIA QUERY PARA MOBILE*/
-@media(max-width: 43.75rem){
+@media(max-width: 756px){
     .sectionIndexUno img{
         display: none;
     }
+    .alfajorHidden{
+        display: block;
+    }
     h1{
-        font-size: 50px;
+        font-size: 40px;
     }
     .articleUno{
         height: 100%;
@@ -598,5 +603,29 @@ aside .botonIndex{
     .sectionNosotrosUno img{
         display: none;
         grid-column:unset;
+    }
+}
+@media(max-width:590px){
+    .sectionIndexUno{
+        background-image: url(../assets/vista-mobile/pag-principal/fondo-mobile.png);
+    }
+    .lineaIndex{
+        display: none;
+    }
+}
+@media(max-width:430px){
+    .imgGaleria1{
+        display: none;
+    }
+    .imgGaleria2{
+        width: 50%;
+        height: 50%;
+    }
+    .articleUno{
+        padding: 20px;
+    }
+    .botonIndex{
+        margin-left: 20%;
+        margin-right: 20%;
     }
 }
