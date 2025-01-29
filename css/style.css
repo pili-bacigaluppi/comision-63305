@@ -20,7 +20,7 @@ header{
     width: 100%;
 }
 .navbar{
-    background-color: #193C40;
+    background-color: #574964;
     height: 65px;
     display: flex;
     flex-direction: row;
@@ -41,85 +41,33 @@ li{
     width: 176px;
     height: 63px;
 }
-@media(max-width: 56.25rem){
-    .menuPopUp{
-        display: none;
-    }
-    .menuLines{
-        display: block;
-    }
-    .navbar{
-        display: flex;
-        justify-content: flex-end;
-        height: 3.9375rem;
-        justify-content: space-between;
-    }
-    .navbar img{
-        height: 3.9375rem;
-        width: 10rem;
-    }
-    a{
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .sectionNosotrosUno{
-        grid-template-columns: repeat(8, 5.8125rem);
-        grid-template-rows: repeat(9, 2.8469rem);
-        justify-items: center;
-        justify-content: center;
-    }
-    .sectionNosotrosUno h2{
-        grid-column: 1/9;
-        grid-row: 2/3;
-        align-items: center;
-    }
-    .sectionNosotrosUno img{
-        grid-column: 7/9;
-        grid-row: 3/7;
-        align-items: center;
-        width: 16.625rem;
-        height: 18.125rem;
-    }
-    .sectionNosotrosUno p{
-        grid-column: 7/8;
-        grid-row: 4/8;
-        align-items: center;
-        font-size: 0.9rem;
-    }
-}
-@media(max-width: 43.75rem){
-    .sectionNosotrosUno img{
-        display: none;
-        grid-column:unset;
-    }
-}
 /*para cosas generales*/
 h1{
     font-size: 4rem;
-    color: #6B3612;
+    color: #7B6674;
     width: 450px;
     margin: 20px;
 }
 h2{
-    color: #8C5632;
+    color: #7B6674;
     font-size: 2rem;
     text-align: center;
     font-weight: 500;
 }
 h3{
-    color: #8C5632;
+    color: #7B6674;
     font-size: 1.4rem;
 }
 h4{
     font-weight: 800;
-    color: #8C5632;
+    color: #7B6674;
     font-size: 1.2rem;
 }
 span{
     font-weight: bolder;
 }
 hr{
-    border: 1px solid #8C5632;
+    border: 1px solid #7B6674;
 }
 /*para todos los footers*/
 footer{
@@ -133,7 +81,7 @@ footer{
     height: 334.01px;
 }
 footer p{
-    color: #8C5632;
+    color: #7B6674;
     font-size: 1rem;
 }
 .inputFooterUno{
@@ -151,7 +99,7 @@ footer p{
     font-size: 1.25rem;
     font-family: "Lato", serif;
     color: #FFFFFF;
-    background-color: #8C5632;
+    background-color: #7B6674;
 }
 .sectionFooter{
     display: flex;
@@ -165,10 +113,14 @@ footer p{
 }
 /*Index section 1*/
 .articleUno{
-    background-color: #ffffff8e;
+    background-color: rgba(255, 255, 255, 0.527);
     width: 673.06px;
     height: 500px;
+    max-height: 100%;
     align-content: center;
+}
+.alfajorHidden{
+    display: none;
 }
 .sectionIndexUno{
     background-image: url(../assets/vista-desktop/pag-principal/fondo.png);
@@ -181,14 +133,15 @@ footer p{
     width: 700px;
 }
 .botonIndex{
-    background-color: #193C40;
-    color: #FFFFFF;
+    background-color: #DED3CD;
+    color: #7B6674;
     border: none;
     border-radius: 49px;
-    width: 353.77px;
-    height: 59.47px;
+    padding: 30px 80px 30px 80px;
     font-size: 1rem;
+    font-weight: 700;
     cursor: pointer;
+    box-shadow: 5px 10px 15px #86707E;
 }
 /*Index section 2*/
 .sectionDos {
@@ -210,7 +163,7 @@ footer p{
 }
 .lineaIndex{
     width: 441.68px;
-    border: 0.3px solid #8C5632;
+    border: 0.3px solid #7B6674;
 }
 /*Index section 3 */
 aside{
@@ -223,16 +176,16 @@ aside{
     justify-content: center;
 }
 aside h2{
-    color: #FFFFFF;
-    font-weight: 300;
+    color: #86707E  ;
+    font-weight: 900;
     font-size: 2.25rem;
 }
 aside .botonIndex{
-    background-color: #8C5632;
+    background-color: #7B6674;
+    color: #eeeeee;
     border-radius: 15px;
     font-size: 1.3rem;
     width: 41.875rem;
-    height: 4rem;
 }
 .reseñas{
     display: flex;
@@ -263,6 +216,7 @@ aside .botonIndex{
     grid-template-columns: repeat(8, 180px);
     grid-template-rows: repeat(8, 80px);
     justify-items: center;
+    justify-content: center;
 }
 .sectionNosotrosUno h2{
     font-weight: 600;
@@ -270,6 +224,7 @@ aside .botonIndex{
     grid-column: 2/5;
     grid-row: 2/4;
     align-self: center;
+    color: #9F8383;
 }
 .sectionNosotrosUno p{
     font-size: 1rem;
@@ -290,7 +245,7 @@ aside .botonIndex{
 /*Section Sobre Nosotros 2*/
 .sectionNosotrosDos{
     background-image: url(../assets/vista-desktop/pag-sobrenosotros/fondo.png);
-    background-color: #193C40;
+    background-color: #574964;
     height: 36.5rem;
     display: grid;
     place-content: center;
@@ -351,64 +306,12 @@ aside .botonIndex{
     left: -10%;
     top: 47rem;
 }
-/*Section Sobre Nosotros Tres*/
-.sectionNosotrosTres{
-    display: flex;
-    justify-content: center;
-    gap: 130px;
-    padding-top: 40px;
-}
-.divNosotrosTres p{
-    max-width: 400px;
-    text-align: center;
-}
-.divNosotrosTres{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-.imgSobreNosotros{
-    width: 22.5rem;
-    height: 38.125rem;
-    object-fit: cover;
-}
-.divNosotrosTres h2{
-    font-weight: 800;
-}
-@media(max-width:56.25rem){
-    .sectionNosotrosUno{
-        grid-template-columns: repeat(8, 5.8125rem);
-        grid-template-rows: repeat(9, 2.8469rem);
-        justify-items: center;
-        justify-content: center;
-    }
-    .sectionNosotrosUno h2{
-        grid-column: 1/9;
-        grid-row: 2/3;
-        align-items: center;
-    }
-    .sectionNosotrosUno img{
-        grid-column: 7/9;
-        grid-row: 3/7;
-        align-items: center;
-        width: 16.625rem;
-        height: 18.125rem;
-    }
-    .sectionNosotrosUno p{
-        grid-column: 2/6;
-        grid-row: 4/8;
-        align-items: center;
-        font-size: 0.9rem;
-    }
-}
 /*Section Lineup Uno*/
 .articleLineupUno{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #ED8629;
+    background-color: #B49797;
     color: #FFFFFF;
     height: 45px;
     font-size: 1.3rem;
@@ -417,7 +320,7 @@ aside .botonIndex{
     width: 294px;
     height: 32px;
     background-color: #FFFFFF;
-    color: #ED8629;
+    color: #B49797;
     font-size: 1.2rem;
     font-weight: 500;
     border: none;
@@ -508,7 +411,7 @@ aside .botonIndex{
 }
 /*Section Suscripcion Uno*/
 .divSuscripcionUno{
-    color: #8C5632;
+    color: #86707E;
     font-weight: 700;
     align-self: flex-end;
     margin: 0px 0px 30px 70px;
@@ -525,7 +428,7 @@ aside .botonIndex{
 }
 /*Section Suscricion Dos*/
 .sectionSuscripcionDos{
-    background-color: #193C40;
+    background-color: #574964;
 }
 .sectionSuscripcionDos h3{
     color: #D9D9D9;
@@ -544,7 +447,6 @@ aside .botonIndex{
     flex-wrap: wrap;
     gap: 20px;
 }
-/*CAMBIAR LOS TAMAÑOS DE LAS CAJAS*/
 .cadaCaja{
     background-color: #C5CBDB;
     width: 30rem;
@@ -556,10 +458,6 @@ aside .botonIndex{
 }
 .cadaCaja p{
     color: #000000;
-}
-.cadaCaja img{
-    width: 14.75rem;
-    height: 11rem;
 }
 /*Section Suscripcion 3*/
 .sectionSuscripcionTres h3{
@@ -578,7 +476,7 @@ aside .botonIndex{
 .articleSuscripcionTres img{
     width: 10.625rem;
     height: 9.375rem;
-    background-color: #193C40;
+    background-color: #86707E;
     border-radius: 40px;
     padding: 10px;
     margin-left: 160px;
@@ -598,6 +496,8 @@ aside .botonIndex{
 .sectionSuscripcionCuatro img{
     width: 33rem;
     height: 25rem;
+    background-color: #574964;
+    padding: 20px;
 }
 /*Section Suscripcion 5*/
 .sectionSuscripcionCinco{
@@ -605,9 +505,9 @@ aside .botonIndex{
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    background-color: #193C40;
+    background-color: #574964;
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 .sectionSuscripcionCinco h3{
     font-weight: 500;
@@ -618,4 +518,85 @@ aside .botonIndex{
     width: 45rem;
     height: 16rem;
     object-fit: cover;
+}
+/*MEDIA QUERY PARA TABLET*/
+@media(max-width: 57.6875rem){
+    .menuPopUp{
+        display: none;
+    }
+    .menuLines{
+        display: block;
+    }
+    .navbar{
+        display: flex;
+        justify-content: flex-end;
+        height: 3.9375rem;
+        justify-content: space-between;
+    }
+    .navbar img{
+        height: 100%;
+        width: 10rem;
+        margin-left: 15px;
+    }
+    a{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .articleUno{
+        height: 100%;
+        padding: 50px;;
+    }
+    h1{
+        font-size: 50px;
+        margin-left: 5px;
+    }
+    .botonIndex{
+        font-size: 15px;
+        padding: 20px 30px 20px 30px;
+    }
+    .alfajorHidden{
+        display: inline;
+    }
+    .sectionNosotrosUno{
+        grid-template-columns: repeat(8, 5.8125rem);
+        grid-template-rows: repeat(9, 2.8469rem);
+        justify-items: center;
+        justify-content: center;
+    }
+    .sectionNosotrosUno h2{
+        grid-column: 1/9;
+        grid-row: 2/3;
+        align-items: center;
+    }
+    .sectionNosotrosUno img{
+        grid-column: 7/9;
+        grid-row: 3/7;
+        align-items: center;
+        width: 16.625rem;
+        height: 18.125rem;
+    }
+    .sectionNosotrosUno p{
+        grid-column: 7/8;
+        grid-row: 4/8;
+        align-items: center;
+        font-size: 0.9rem;
+    }
+}
+
+/*MEDIA QUERY PARA MOBILE*/
+@media(max-width: 43.75rem){
+    .sectionIndexUno img{
+        display: none;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .articleUno{
+        height: 100%;
+        width: 100%;
+    }
+    .sectionNosotrosUno img{
+        display: none;
+        grid-column:unset;
+    }
 }
