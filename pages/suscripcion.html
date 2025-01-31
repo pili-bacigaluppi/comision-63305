@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Suscripciones-La Alfajorería</title>
+    <title>Suscripciones-Dulce Tentación</title>
 </head>
 <body>
     <header>
@@ -47,7 +47,7 @@
         <section class="sectionSuscripcionTres">
             <h3>¿QUÉ INCLUYE LA SUSCRIPCIÓN?</h3>
             <article class="articleSuscripcionTres">
-                <img src="../assets/vista-desktop/pag-suscripcion/calendario.png" alt="icono-de-calendario">
+                <img src="../assets/vista-desktop/pag-suscripcion/calendario.png" alt="icono-de-calendario" class="iconoCalendario">
                 <p>ENTREGA MENSUAL DE LA MEJOR SELECCIÓN DE ALFAJORES ARTESANALES <br> DE TODO EL PAÍS</p>
                 <img src="../assets/vista-desktop/pag-suscripcion/motito.png" alt="icono-de-moto">
                 <p>ENVÍO A DOMICILIO SIN COSTO EN CABA, ZONA NORTE Y TRENQUE LAUQUEN</p>
@@ -65,36 +65,45 @@
             <h3>MÉTODOS DE PAGO</h3>
             <img src="../assets/vista-desktop/pag-suscripcion/metodos-de-pago.PNG" alt="métodos-de-pago">
         </section>
-        <section>
-            <h3 id="paraSuscribirse">¡SUSCRIBITE!</h3>
-            <h4>INGRESA TUS DATOS</h4>
-            <form action="" method="">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre">
-
-                <label for="dni">DNI:</label>
-                <input type="text" id="dni">
-
-                <label for="email">Email:</label>
-                <input type="email" id="email">
-
-                <label for="numeroDeCelular">Número de Celular</label>
-                <input type="text" id="numeroDeCelular">
-
-                <label for="lugares">Lugar de Entrega:</label>
-                <select name="" id="lugares">
-                    <option value="">CABA</option>
-                    <option value="">ZONA NORTE</option>
-                    <option value="">TRENQUE LAUQUEN</option>
-                </select>
-
-                <label for="seis">Caja de 6 alfajores:</label>
-                <input type="radio" id="seis" name="tipoDeSuscripcion">
-                <label for="doce">Caja de 12 alfajores:</label>
-                <input type="radio" id="doce" name="tipoDeSuscripcion">
-                    
-                <label for="enviar"></label>
-                <input type="submit" id="enviar">
+        <section class="sectionContactoUno">
+            <div class="titulosS">
+                <h2 id="paraSuscribirse">¡SUSCRIBITE!</h2>
+                <p>Ingresa tus datos</p>
+            </div>
+            <form class="formC" action="" method="">
+                <div class="divCUno">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" class="inputCUno">
+                </div>
+                <div class="divCUno">   
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" class="inputCUno">
+                </div>
+                <div class="divCUno">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="inputCUno">
+                </div>
+                <div class="divCUno">
+                    <label for="numeroDeCelular">Número de Celular</label>
+                    <input type="text" id="numeroDeCelular" class="inputCUno">
+                </div>
+                <div class="divCUno">
+                    <label for="lugares">Lugar de Entrega:</label>
+                    <select name="" id="lugares" class="inputCUno">
+                        <option value="">CABA</option>
+                        <option value="">ZONA NORTE</option>
+                        <option value="">TRENQUE LAUQUEN</option>
+                    </select>
+                </div>  
+                <div class="divCUno">
+                    <label for="lugares">Tipo de Suscripción:</label>
+                    <select name="" id="lugares" class="inputCUno">
+                        <option value="">Caja de 12 Alfajores</option>
+                        <option value="">Caja de 6 Alfajores</option>
+                    </select>
+                </div> 
+                    <label for="enviar"></label>
+                    <input type="submit" id="enviar" class="inputCEnviar">
             </form>
         </section>
     </main>

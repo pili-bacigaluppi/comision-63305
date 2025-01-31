@@ -92,7 +92,7 @@ footer p{
     height: 50px;
     font-family: "Lato", serif;
     font-size: 20px;
-    background-color: #FFFBE1;
+    background-color: #FFFFFF;
     border: none;
 }
 .inputFooterDos{
@@ -195,7 +195,7 @@ aside .botonIndex{
     width: 100%;
 }
 .cadaReseña{
-    background-color: #f0ecde;
+    background-color: #fff5f5;
     width: 372px;
     height: 400px;
     justify-items: center;
@@ -391,7 +391,7 @@ aside .botonIndex{
 .formC{
     display: flex;
     flex-wrap: wrap;
-    column-gap: 15%;
+    column-gap: 200px;
     row-gap: 100px;
     justify-content: center;
     padding: 30px;
@@ -415,8 +415,6 @@ aside .botonIndex{
 .inputCEnviar{
     width: 300px;
     height: 50px;
-    margin-left: 20%;
-    margin-right: 34%;
     background-color: #574964;
     border-radius: 10px;
     color: #FFFFFF;
@@ -425,12 +423,12 @@ aside .botonIndex{
 .inputCUno{
     width: 420px;
     height: 50px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .inputCDos{
     width: 1040px;
     height: 50px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .divCDos::before, .divCUno::before{
     content: "";
@@ -445,7 +443,7 @@ aside .botonIndex{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 40px;
+    padding: 40px 0px 40px 0px;
 }
 
 
@@ -560,7 +558,17 @@ aside .botonIndex{
     height: 16rem;
     object-fit: cover;
 }
-
+/*Section Suscripción 6*/
+.sectionSuscripcionSeis{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    align-items: center;
+}
+.titulosS{
+    text-align: center;
+}
 /*MEDIA QUERIES!*/
 @media(max-width: 1225px){
     .inputCUno{
@@ -604,8 +612,15 @@ aside .botonIndex{
     .inputCDos{
         width: 750px;
     }
+    .inputCUno{
+        width: 320px;
+    }
 }
 @media(max-width: 963px){
+    .formC{
+        row-gap: 70px;
+        column-gap: 120px;
+    }
     .inputCUno{
         width: 320px;
     }
@@ -717,14 +732,14 @@ aside .botonIndex{
         width: 80px;
         margin: 0px 10px 0px 10px;
     }
+    .formC{
+        row-gap: 70px;
+    }
     .inputCUno{
         width: 260px;
     }
     .inputCDos{
         width: 657px;
-    }
-    .inputCEnviar{
-        margin: 0px 130px 0px 0px;
     }
 }
 
@@ -734,7 +749,7 @@ aside .botonIndex{
 
 
 
-@media(max-width: 780px){
+@media(max-width: 790px){
     .inputCDos, .inputCUno{
         width: 500px;
     }
@@ -742,14 +757,12 @@ aside .botonIndex{
         justify-content: center;
         column-gap: 0px;
         row-gap: 40px;
+        padding-top: 10px;
     }
     .divCDos{
         margin: 0%;
     }
-    .inputCEnviar{
-        margin-left: auto;
-        margin-right: auto;
-    }
+    
 }
 @media(max-width: 756px){
     .sectionIndexUno img{
