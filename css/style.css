@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    border: none;
+    outline: none;
 }
 body{
     background-color: #C5CBDB;
@@ -193,7 +195,7 @@ aside .botonIndex{
     width: 100%;
 }
 .cadaReseña{
-    background-color: #FFFBE1;
+    background-color: #f0ecde;
     width: 372px;
     height: 400px;
     justify-items: center;
@@ -379,39 +381,75 @@ aside .botonIndex{
     height: 10rem;
 }
 /*Section Contacto 1*/
-.formUno{
-    display: grid;
-    grid-template-areas: 
-    "item1 item2"
-    "item3 item4"
-    "item5 item5"
-    ;
+.sectionContactoUno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 30px;
 }
-.inputUno input, .inputDos input, .inputTres input, .inputCuatro input{
-    width: 26.625rem;
-    height: 2.8rem;
-    background-color: #FFFBE1;
-    border: none;
+.formC{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15%;
+    row-gap: 100px;
+    justify-content: center;
+    padding: 30px;
 }
-.inputUno{
-    grid-area: item1;
+.divCUno{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    width: max-content;
 }
-.inputDos{
-    grid-area: item2;
+.divCDos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+    width: max-content;
 }
-.inputTres{
-    grid-area: item3;
+.inputCEnviar{
+    width: 300px;
+    height: 50px;
+    margin-left: 20%;
+    margin-right: 34%;
+    background-color: #574964;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 1.4rem;
 }
-.inputCuatro{
-    grid-area: item4;
+.inputCUno{
+    width: 420px;
+    height: 50px;
+    border-radius: 10px;
 }
-.inputCinco input{
-    width: 68.75rem;
-    height: 2.8rem;
-    border: none;
-    grid-area: item5;
-    color: #FFFBE1;
+.inputCDos{
+    width: 1040px;
+    height: 50px;
+    border-radius: 10px;
 }
+.divCDos::before, .divCUno::before{
+    content: "";
+    background-color: #574964;
+    height: 3px;
+    width: 99%;
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+}
+.sectionContactoDos{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+}
+
+
+
 /*Section Suscripcion Uno*/
 .divSuscripcionUno{
     color: #86707E;
@@ -522,8 +560,23 @@ aside .botonIndex{
     height: 16rem;
     object-fit: cover;
 }
-/*MEDIA QUERY PARA TABLET*/
+
+/*MEDIA QUERIES!*/
+@media(max-width: 1225px){
+    .inputCUno{
+        width: 380px;
+    }
+    .inputCDos{
+        width: 950px;
+    }
+}
 @media(max-width: 1155px){
+    .inputCDos{
+        width: 850px;
+    }
+    .inputCUno{
+        width: 350px;
+    }
     .inputFooterUno{
         width: 300px;
         font-size: 1.1rem;
@@ -540,6 +593,24 @@ aside .botonIndex{
     }
     footer p{
         font-size: 0.9rem;
+    }
+    .inputCEnviar{
+        width: 250px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:1027px){
+    .inputCDos{
+        width: 750px;
+    }
+}
+@media(max-width: 963px){
+    .inputCUno{
+        width: 320px;
+    }
+    .inputCEnviar{
+        width: 240px;
     }
 }
 @media(max-width: 935px){
@@ -646,6 +717,15 @@ aside .botonIndex{
         width: 80px;
         margin: 0px 10px 0px 10px;
     }
+    .inputCUno{
+        width: 260px;
+    }
+    .inputCDos{
+        width: 657px;
+    }
+    .inputCEnviar{
+        margin: 0px 130px 0px 0px;
+    }
 }
 
 
@@ -654,7 +734,23 @@ aside .botonIndex{
 
 
 
-/*MEDIA QUERY PARA MOBILE*/
+@media(max-width: 780px){
+    .inputCDos, .inputCUno{
+        width: 500px;
+    }
+    .formC{
+        justify-content: center;
+        column-gap: 0px;
+        row-gap: 40px;
+    }
+    .divCDos{
+        margin: 0%;
+    }
+    .inputCEnviar{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 @media(max-width: 756px){
     .sectionIndexUno img{
         display: none;
@@ -690,8 +786,6 @@ aside .botonIndex{
     width: 80%;
     align-self: center;
     }
-}
-@media(max-width:725px){
     .sectionFooter{
         gap: 1rem;
     }
@@ -700,8 +794,7 @@ aside .botonIndex{
         flex-direction: column;
     }
     .inputFooterDos, .inputFooterUno{
-        width: 300px;
-        border-radius: 5px;
+        width: 350px;
     }
 }
 @media(max-width:590px){
@@ -716,6 +809,9 @@ aside .botonIndex{
     }
     aside .botonIndex{
         font-size: 1rem;
+    }
+    .inputCDos, .inputCUno{
+        width: 350px;
     }
 }
 @media(max-width:520px){
@@ -757,6 +853,9 @@ aside .botonIndex{
     .lineaFooter{
         display: none;
     }
+    .inputCDos, .inputCUno{
+        width: 280px;
+    }
 }
 @media(max-width:430px){
     h1{
@@ -785,5 +884,12 @@ aside .botonIndex{
     }
     .cadaReseña img{
         width: 15px;
+    }
+    aside .botonIndex{
+        width: 280px;
+    }
+    .inputCDos, .inputCUno{
+        width: 240px;
+        height: 40px;
     }
 }
