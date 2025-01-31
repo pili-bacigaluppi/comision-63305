@@ -37,7 +37,7 @@ a{
 li{
     list-style: none;
 }
-.navbar img{
+.logo{
     width: 176px;
     height: 63px;
 }
@@ -83,6 +83,7 @@ footer{
 footer p{
     color: #7B6674;
     font-size: 1rem;
+    width: 98%;
 }
 .inputFooterUno{
     width: 415px;
@@ -187,8 +188,9 @@ aside .botonIndex{
 }
 .reseñas{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 1rem;
+    width: 100%;
 }
 .cadaReseña{
     background-color: #FFFBE1;
@@ -207,6 +209,9 @@ aside .botonIndex{
     border-radius: 47px;
     width: 106px;
     height: 103px;
+}
+.reseñaHidden{
+    display: none;
 }
 /*Section Sobre Nosotros 1*/
 .sectionNosotrosUno{
@@ -518,20 +523,39 @@ aside .botonIndex{
     object-fit: cover;
 }
 /*MEDIA QUERY PARA TABLET*/
-@media(max-width: 57.6875rem){
+@media(max-width: 1155px){
+    .inputFooterUno{
+        width: 300px;
+        font-size: 1.1rem;
+    }
+    .inputFooterDos{
+        width: 80px;
+        font-size: 1.1rem;
+    }
+    .imgFooter img{
+        width: 95px;
+    }
+    footer h3{
+        font-size: 1.2rem;
+    }
+    footer p{
+        font-size: 0.9rem;
+    }
+}
+@media(max-width: 935px){
     .menuPopUp{
         display: none;
     }
     .menuLines{
         display: block;
+        margin-right: 15px;
     }
     .navbar{
         display: flex;
-        justify-content: flex-end;
-        height: 3.9375rem;
         justify-content: space-between;
+        height: 3.9375rem;
     }
-    .navbar img{
+    .logo{
         margin-left: 15px;
     }
     a{
@@ -565,6 +589,41 @@ aside .botonIndex{
         justify-items: center;
         justify-content: center;
     }
+    aside{
+        padding: 40px;
+    }
+    aside h2{
+        font-size: 2rem;
+    }
+    .reseñas{
+        flex-wrap: wrap;
+    }
+    .cadaReseña{
+        width: 80%;
+        height: 130px;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 10px;
+        overflow-y: hidden;
+    }
+    .reseñaHidden{
+        display: block;
+    }
+    .reseñaNormal{
+        display: none;
+    }
+    .cadaReseña img{
+        object-fit: contain;
+        min-width: 30%;
+        min-height: 100%;
+        border-radius: 100%;
+    }
+    aside .botonIndex{
+        width: 100%;
+        font-size: 1.2rem;
+    }
     .sectionNosotrosUno h2{
         grid-column: 1/9;
         grid-row: 2/3;
@@ -583,7 +642,17 @@ aside .botonIndex{
         align-items: center;
         font-size: 0.9rem;
     }
+    .imgFooter img{
+        width: 80px;
+        margin: 0px 10px 0px 10px;
+    }
 }
+
+
+
+/*PONER EL MATERIAL UI ICONO DE FLECHA*/
+
+
 
 /*MEDIA QUERY PARA MOBILE*/
 @media(max-width: 756px){
@@ -600,9 +669,39 @@ aside .botonIndex{
         height: 100%;
         width: 100%;
     }
+    .reseñaHidden{
+        display: none;
+    }
     .sectionNosotrosUno img{
         display: none;
         grid-column:unset;
+    }
+}
+@media(max-width: 725px){
+    .inputFooterUno{
+        width: 270px;
+        font-size: 1rem;
+    }
+    .inputFooterDos{
+        width: 70px;
+        font-size: 1rem;
+    }
+    footer p{
+    width: 80%;
+    align-self: center;
+    }
+}
+@media(max-width:725px){
+    .sectionFooter{
+        gap: 1rem;
+    }
+    .imgFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    .inputFooterDos, .inputFooterUno{
+        width: 300px;
+        border-radius: 5px;
     }
 }
 @media(max-width:590px){
@@ -612,8 +711,57 @@ aside .botonIndex{
     .lineaIndex{
         display: none;
     }
+    aside{
+        gap: 2rem;
+    }
+    aside .botonIndex{
+        font-size: 1rem;
+    }
+}
+@media(max-width:520px){
+    .imgFooter img{
+        width: 70px;
+    }
+    .inputFooterUno, .inputFooterDos{
+        width: 240px;
+    }
+    footer p{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width: 450px){
+    .cadaReseña{
+        height: 100px;
+        width: 100%;
+    }
+    .cadaReseña img{
+        height: 80px;
+        border-radius: 100px;
+    }
+    aside .botonIndex{
+        width: 320px;
+        font-size: 0.9rem;
+        margin: auto;
+    }
+    footer{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    footer h3{
+        font-size: 1.3rem;
+    }
+    .imgFooter{
+        flex-direction: row;
+        margin: auto;
+    }
+    .lineaFooter{
+        display: none;
+    }
 }
 @media(max-width:430px){
+    h1{
+        width: 90%;
+    }
     .imgGaleria1{
         display: none;
     }
@@ -627,5 +775,15 @@ aside .botonIndex{
     .botonIndex{
         margin-left: 20%;
         margin-right: 20%;
+        font-size: 0.7rem;
+        width: 190px;
+    }
+}
+@media(max-width: 380px){
+    aside p{
+        display: none;
+    }
+    .cadaReseña img{
+        width: 15px;
     }
 }
