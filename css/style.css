@@ -215,6 +215,9 @@ aside .botonIndex{
 .reseñaHidden{
     display: none;
 }
+.flechaIndex{
+    display: none;
+}
 /*Section Sobre Nosotros 1*/
 .sectionNosotrosUno{
     display: grid;
@@ -742,13 +745,6 @@ aside .botonIndex{
         width: 657px;
     }
 }
-
-
-
-/*PONER EL MATERIAL UI ICONO DE FLECHA*/
-
-
-
 @media(max-width: 790px){
     .inputCDos, .inputCUno{
         width: 500px;
@@ -762,13 +758,12 @@ aside .botonIndex{
     .divCDos{
         margin: 0%;
     }
-    
 }
 @media(max-width: 756px){
     .sectionIndexUno img{
         display: none;
     }
-    .alfajorHidden{
+    .flechaIndex{
         display: block;
     }
     h1{
@@ -794,6 +789,9 @@ aside .botonIndex{
     .inputFooterDos{
         width: 70px;
         font-size: 1rem;
+    }
+    .cadaReseña p{
+        margin: 0px;
     }
     footer p{
     width: 80%;
@@ -837,10 +835,21 @@ aside .botonIndex{
     footer p{
         font-size: 0.8rem;
     }
+    aside p{
+        display: none;
+    }
 }
 @media(max-width: 450px){
+    aside{
+        padding: 70px;
+        min-height: 500px;
+    }
+    aside h2{
+        font-size: 1.5rem;
+        
+    }
     .cadaReseña{
-        height: 100px;
+        height: 90px;
         width: 100%;
     }
     .cadaReseña img{
@@ -892,9 +901,6 @@ aside .botonIndex{
     }
 }
 @media(max-width: 380px){
-    aside p{
-        display: none;
-    }
     .cadaReseña img{
         width: 15px;
     }
