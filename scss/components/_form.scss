@@ -1,0 +1,48 @@
+.formC{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 200px;
+    row-gap: 100px;
+    justify-content: center;
+    padding: 30px;
+    .divCUno{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        width: max-content;
+        &:before{
+            content: "";
+            background-color: #574964;
+            height: 3px;
+            width: 99%;
+            position: absolute;
+            bottom: 0;
+            left: 2px;
+        }
+    }
+
+
+/*VER MIXIN Y EXTEND*/
+
+
+
+    .divCDos{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+        position: relative;
+        width: max-content;
+        &:before{
+            content: "";
+            background-color: #574964;
+            height: 3px;
+            width: 99%;
+            position: absolute;
+            bottom: 0;
+            left: 2px;
+        }
+    }
+}

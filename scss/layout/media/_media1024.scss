@@ -1,0 +1,42 @@
+@media(max-width:1024px){
+    .menuPopUp{
+        display: none;
+    }
+    .menuLines{
+        display: block;
+        margin-right: 15px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        height: 3.9375rem;
+    }
+    aside{
+        article{
+            padding: 0rem 1rem;
+        }
+        button{
+            font-size: 1.4rem;
+            padding: 20px 30px 20px 30px;
+        }
+    }
+
+    .inputFooterUno{
+        width: 300px;
+        font-size: 1.1rem;
+    }
+    .inputFooterDos{
+        width: 80px;
+        font-size: 1.1rem;
+    }
+    .imgFooter img{
+        width: 95px;
+        margin-left: 10px;
+    }
+    footer h3{
+        font-size: 1.2rem;
+    }
+    footer p{
+        font-size: 0.9rem;
+    }
+}

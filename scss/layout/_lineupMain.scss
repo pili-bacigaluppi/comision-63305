@@ -1,0 +1,67 @@
+.articleLineupUno{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: map-get($colores, color6);
+    color: map-get($colores, color2);
+    height: 45px;
+    font-size: 1.3rem;
+    button{
+        width: 294px;
+        height: 32px;
+        background-color: map-get($colores, color2 );
+        color: map-get($colores, color6 );
+        font-size: 1.2rem;
+        font-weight: 500;
+        border: none;
+        border-radius: 15px;
+    }
+}
+.sectionLySUno{
+    display: grid;
+    grid-template-columns: 50% 40%;
+    gap: 80px;
+    img{
+        width: 43.75rem;
+        height: 43.75rem;
+        object-fit: contain;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        text-align: center;
+        h2{
+            font-weight: 800;
+            font-size: 2rem;
+        }
+    }
+}
+.sectionLineupDos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    article{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 70rem;
+        justify-content: center;
+        column-gap: 40px;
+        row-gap: 20px;
+        text-align: center;
+        div{
+            background-color: map-get($colores, color3 );
+            width: 20rem;
+            height: 12rem;
+            object-fit: contain;
+            img{
+                width: 15.625rem;
+                height: 10rem;
+            }
+        }
+    }
+}

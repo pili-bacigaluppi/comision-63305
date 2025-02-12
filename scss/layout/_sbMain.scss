@@ -1,0 +1,103 @@
+.sectionNosotrosUno{
+    display: grid;
+    grid-template-columns: repeat(8, 180px);
+    grid-template-rows: repeat(8, 80px);
+    justify-items: center;
+    justify-content: center;
+    h2{
+        font-weight: 600;
+        font-size: 3rem;
+        grid-column: 2/5;
+        grid-row: 2/4;
+        align-self: center;
+        color: map-get($colores, color7 );
+    }
+    p{
+        font-size: 1rem;
+        text-align: justify;
+        width: 31.25rem;
+        grid-column: 2/5;
+        grid-row: 4/6;
+        align-self: center;
+    }
+    img{
+        max-width: 31.25rem;
+        min-width: 16.25rem;
+        height: 34.375rem;
+        grid-column: 5/8;
+        grid-row: 1/5;
+        object-fit: cover;
+    }
+}
+.sectionNosotrosDos{
+    background-image: url(../assets/vista-desktop/pag-sobrenosotros/fondo.png);
+    background-color: map-get($colores, color10 );
+    height: 36.5rem;
+    display: grid;
+    place-content: center;
+    div{
+        background-color: map-get($colores, color5 );
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 1157px;
+        height: 414px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.5rem;
+        text-align: center;
+        display: grid;
+        place-content: center;
+    }
+    .imagen1Left{
+        width: 260px;
+        height: 190px;
+        position: absolute;
+        left: -6%;
+        top: 51rem;
+        z-index: 10;
+    }
+    .imagen2Right{
+        width: 299px;
+        height: 155px;
+        position: absolute;
+        right: -8%;
+        bottom: -40rem;
+    }
+    .imagen3Right{
+        width: 272px;
+        height: 140px;
+        position: absolute;
+        right: -8%;
+        bottom: -33.6rem;
+    }
+    .imagen4Right{
+        width: 260px;
+        height: 190px;
+        position: absolute;
+        right: -7%;
+        bottom: -46rem;
+    }
+    .imagen5Left{
+        width: 299px;
+        position: absolute;
+        height: 155px;
+        left: -8%;
+        top: 40.4rem;
+    }
+    .imagen6Left{
+        width: 272px;
+        position: absolute;
+        height: 140px;
+        left: -10%;
+        top: 47rem;
+    }
+
+
+
+/*HACER CON MIXIN*/
+
+
+
+
+
+}

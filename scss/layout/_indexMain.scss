@@ -1,0 +1,100 @@
+.sectionIndexUno{
+    background-image: url(../assets/vista-desktop/pag-principal/fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    article{
+        background-color: rgba(255, 255, 255, 0.527);
+        width: 673.06px;
+        height: 500px;
+        align-content: center;
+        .botonIndex{
+            background-color: map-get($colores, color4 );
+            color: map-get($colores, color8 );
+            border: none;
+            border-radius: 49px;
+            margin-left: 20px;
+            padding: 30px 80px 30px 80px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 5px 10px 15px map-get($colores , color9 );
+            /*HACER MIXINNNNN*/
+        }
+    }
+}
+.sectionDos {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    hr{
+        width: 441.68px;
+        border: 0.3px solid map-get($colores, color8 );
+    }
+    article{
+        display: flex;
+        gap: 5%;
+        .imgGaleria1, .imgGaleria2{
+            width: 30%;
+            height: 30%;
+        /*VER EXTEND ACA*/
+        }
+    }
+}
+aside{
+    background-image: url(../assets/vista-desktop/pag-principal/fondo-reseñasf.png);
+    min-height: 690px; 
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    h2{
+        color: map-get($colores, color4 );
+        font-weight: 600;
+        font-size: 2.4rem;
+    }
+    button{
+        background-color: map-get($colores, color4 );
+        color: map-get($colores, color10 );
+        border-radius: 30px;
+        font-size: 1.4rem;
+        width: 37rem;
+        padding: 20px;
+    }
+    article{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+        div{
+            background-color: map-get($colores, color1);
+            width: 372px;
+            height: 400px;
+            justify-items: center;
+            padding-top: 30px;
+            p{
+                font-size: .8375rem;
+                width: 300px;
+                text-align: center;
+                margin: 30px;
+            }
+            img{
+                border-radius: 47px;
+                width: 106px;
+                height: 103px;
+            }
+            .reseñaHidden{
+                display: none;
+            }
+            .flechaIndex{
+                display: none;
+            }
+        }
+    }
+}

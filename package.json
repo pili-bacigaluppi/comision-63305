@@ -1,0 +1,21 @@
+{
+  "name": "dulcetentacion",
+  "version": "1.0.0",
+  "description": "Bienvenidos a Dulce Tentación, un club de alfajores donde pagas una mensualidad para recibir una de nuestras cajas llenas de los mejores alfajores artesanalaes del pais 🇦🇷 🇦🇷\r Este proyecto fue desarrollado como parte del curso \"Desarrollo Web\" de Coderhouse.\r <img src=\"./assets/linea-readme.png\" alt=\"linea separadora\" width=\"1500\" height=\"5\">\r ### Tecnologías",
+  "homepage": "https://github.com/pili-bacigaluppi/comision-63305#readme",
+  "bugs": {
+    "url": "https://github.com/pili-bacigaluppi/comision-63305/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pili-bacigaluppi/comision-63305.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./scss/style.scss:./css/style.css"
+  }
+}

@@ -1,0 +1,30 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0px;
+    hr{
+        height: 334.01px;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        p{
+            color: map-get($colores , color8 );
+            font-size: 1rem;
+            width: 98%;
+        }
+        div{
+            display: flex;
+            gap: 20px;
+            img{
+                width: 130px;
+            }
+        }
+    }
+}

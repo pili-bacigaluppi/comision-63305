@@ -1,0 +1,33 @@
+@media(max-width: 425px){
+    .sectionDos{
+        hr{
+            width: 300px;
+        }
+        article{
+            .imgGaleria1{
+                display: none;
+            }
+            .imgGaleria2{
+                width: 50%;
+                height: 50%;
+            }
+        }
+    }
+    footer{
+        flex-direction: column;
+        gap: 2rem;
+        h3{
+        font-size: 1.3rem;
+        }
+    }
+    .imgFooter{
+        flex-direction: row;
+        margin: auto;
+    }
+    .lineaFooter{
+        display: none;
+    }
+    .inputCDos, .inputCUno{
+        width: 280px;
+    }
+}
