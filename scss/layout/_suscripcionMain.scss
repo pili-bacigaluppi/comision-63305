@@ -29,18 +29,13 @@
         padding: 20px;
     }
     article{
-        display: flex;
-        justify-content: center;
+        @include flexbox(flex, row, center, center, 1.25rem);
         flex-wrap: wrap;
-        gap: 20px;
         div{
             background-color: map-get($colores, color5 );
             width: 30rem;
             height: 18rem;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            align-items: center;
+            @include flexbox(flex, column, center, center, .5rem);
             p{
                 color: map-get($colores, color11 );
             }
@@ -69,9 +64,7 @@
     }
 }
 .sectionSuscripcionCuatro{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    @include flexbox(flex, row, center, space-evenly, 0rem);
     padding: 40px;
     h3{
         font-size: 2rem;
@@ -86,10 +79,7 @@
     }
 }
 .sectionSuscripcionCinco{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+    @include flexbox(flex, column, center, center, 2.5rem);
     background-color: map-get($colores, color10 );
     padding-top: 30px;
     padding-bottom: 30px;

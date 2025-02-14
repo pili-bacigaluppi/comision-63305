@@ -49,55 +49,22 @@
         place-content: center;
     }
     .imagen1Left{
-        width: 260px;
-        height: 190px;
-        position: absolute;
-        left: -6%;
-        top: 51rem;
+        @include imgSB(16.25rem, absolute, 11.875rem, -6%, 51rem);
         z-index: 10;
     }
     .imagen2Right{
-        width: 299px;
-        height: 155px;
-        position: absolute;
-        right: -8%;
-        bottom: -40rem;
+        @include imgSB(18.6875rem, absolute, 9.6875rem, 73.2rem, 64rem);
     }
     .imagen3Right{
-        width: 272px;
-        height: 140px;
-        position: absolute;
-        right: -8%;
-        bottom: -33.6rem;
+        @include imgSB(17rem, absolute, 8.75rem, 71rem, 70rem);
     }
     .imagen4Right{
-        width: 260px;
-        height: 190px;
-        position: absolute;
-        right: -7%;
-        bottom: -46rem;
+        @include imgSB(16.25rem, absolute, 11.875rem, 73.5rem, 74rem);
     }
     .imagen5Left{
-        width: 299px;
-        position: absolute;
-        height: 155px;
-        left: -8%;
-        top: 40.4rem;
+        @include imgSB(18.6875rem, absolute, 9.6875rem, -8%, 40.4rem);
     }
     .imagen6Left{
-        width: 272px;
-        position: absolute;
-        height: 140px;
-        left: -10%;
-        top: 47rem;
+        @include imgSB(17rem, absolute, 8.75rem, -10%, 47rem);
     }
-
-
-
-/*HACER CON MIXIN*/
-
-
-
-
-
 }

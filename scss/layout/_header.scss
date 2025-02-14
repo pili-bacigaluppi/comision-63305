@@ -3,11 +3,8 @@ header{
     nav{
         ul{
             background-color: map-get($colores , color10 );
+            @include flexbox(flex, row, center, space-between, 0rem);
             height: 65px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
             overflow-y: hidden;
             li{
                 list-style: none;

@@ -1,0 +1,35 @@
+@mixin inputFooter($width, $height, $fontF, $fontS, $bgColor, $border){
+    width: $width;
+    height: $height;
+    font-family: $fontF;
+    font-size: $fontS;
+    background-color: $bgColor;
+    border: $border;
+}
+@mixin inputContacto($width, $height, $borderR){
+    width: $width;
+    height: $height;
+    border-radius: $borderR;
+}
+@mixin flexbox($display, $flexDir, $align, $justify, $gap){
+    display: $display;
+    flex-direction: $flexDir;
+    align-items: $align;
+    justify-content: $justify;
+    gap: $gap;
+}
+@mixin imgSB($width, $position, $height, $left, $top){
+    width: $width;
+    position: $position;
+    height: $height;
+    left: $left;
+    top: $top;
+}
+/*        VER MIXIN DE GRID           */
+@mixin botones($bgColor, $color, $borderR, $fontS, $padding){
+    background-color: $bgColor;
+    color: $color;
+    border-radius: $borderR;
+    font-size: $fontS;
+    padding: $padding;
+}

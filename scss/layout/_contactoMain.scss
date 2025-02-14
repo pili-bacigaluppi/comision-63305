@@ -1,18 +1,12 @@
 .sectionContactoUno{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
-    padding: 30px;
+    @include flexbox(flex, column, center, baseline, 3.75rem);
+    padding: 1.875rem;
 }
-
-
-/*VER GALERIA, PUEDE SER MIXIN O EXTEND*/
-
-
+.galeriaContacto{
+    @extend .galeria;
+}
 .sectionContactoDos{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 40px 0px 40px 0px;
+    @include flexbox(flex, column, center, baseline, 2.5rem);
+    padding: 2.5rem 0rem 2.5rem 0rem;
 }
+/*           PREGUNTAR EXTEND              */

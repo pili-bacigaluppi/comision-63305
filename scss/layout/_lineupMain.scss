@@ -1,7 +1,5 @@
 .articleLineupUno{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    @include flexbox(flex, row, center, space-evenly, 0rem);
     background-color: map-get($colores, color6);
     color: map-get($colores, color2);
     height: 45px;
@@ -27,10 +25,7 @@
         object-fit: contain;
     }
     article{
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        justify-content: center;
+        @include flexbox(flex, column, center, center, 1.875rem);
         text-align: center;
         h2{
             font-weight: 800;
@@ -39,22 +34,15 @@
     }
 }
 .sectionLineupDos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    @include flexbox(flex, column, center, center, 1.875rem);
     margin-top: 30px;
     article{
-        display: flex;
-        flex-direction: row;
+        @include flexbox(flex, row, center, center, 2.5rem 1.25rem);
         flex-wrap: wrap;
         width: 70rem;
-        justify-content: center;
-        column-gap: 40px;
-        row-gap: 20px;
         text-align: center;
         div{
-            background-color: map-get($colores, color3 );
+            background-color: map-get($colores, color3);
             width: 20rem;
             height: 12rem;
             object-fit: contain;

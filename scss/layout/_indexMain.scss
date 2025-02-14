@@ -1,76 +1,63 @@
 .sectionIndexUno{
+    @include flexbox(flex, row, center, center, 0rem);
     background-image: url(../assets/vista-desktop/pag-principal/fondo.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     article{
         background-color: rgba(255, 255, 255, 0.527);
         width: 673.06px;
         height: 500px;
         align-content: center;
         .botonIndex{
-            background-color: map-get($colores, color4 );
-            color: map-get($colores, color8 );
+            @include botones(map-get($colores, color4 ), map-get($colores, color8 ), 3.0625rem, 1rem, 30px 80px 30px 80px);
             border: none;
-            border-radius: 49px;
             margin-left: 20px;
-            padding: 30px 80px 30px 80px;
-            font-size: 1rem;
             font-weight: 700;
             cursor: pointer;
             box-shadow: 5px 10px 15px map-get($colores , color9 );
-            /*HACER MIXINNNNN*/
         }
     }
 }
 .sectionDos {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    align-items: center;
-    justify-content: center;
+    @include flexbox(flex, column, center, center, 2.5rem);
     padding: 30px;
     hr{
         width: 441.68px;
         border: 0.3px solid map-get($colores, color8 );
     }
-    article{
+    .galeria{
         display: flex;
         gap: 5%;
-        .imgGaleria1, .imgGaleria2{
+        .imgGaleria1{
             width: 30%;
             height: 30%;
-        /*VER EXTEND ACA*/
+        }
+        .imgGaleria2{
+            @extend .imgGaleria1;
         }
     }
 }
 aside{
     background-image: url(../assets/vista-desktop/pag-principal/fondo-reseñasf.png);
     min-height: 690px; 
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    align-items: center;
-    justify-content: center;
+    @include flexbox(flex, column, center, center, 3rem);
     h2{
         color: map-get($colores, color4 );
         font-weight: 600;
         font-size: 2.4rem;
     }
     button{
-        background-color: map-get($colores, color4 );
-        color: map-get($colores, color10 );
-        border-radius: 30px;
-        font-size: 1.4rem;
-        width: 37rem;
-        padding: 20px;
+        @include botones( map-get($colores, color4), map-get($colores, color10), 1.875rem, 1.4rem, 1.25rem);
+        width: 37rem; 
     }
     article{
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
+        @include flexbox(flex, row, center, center, 1rem);
+
+        
+/*             CORREGIR EN MEDIA QUERIEE               */
+
+
+
         width: 100%;
         div{
             background-color: map-get($colores, color1);
