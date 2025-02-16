@@ -1,15 +1,15 @@
 @media(max-width:1024px){
-    .menuPopUp{
-        display: none;
-    }
-    .menuLines{
-        display: block;
-        margin-right: 15px;
-    }
     .navbar{
         display: flex;
         justify-content: space-between;
         height: 3.9375rem;
+        .menuPopUp{
+            display: none;
+        }
+        .menuLines{
+            display: block;
+            margin-right: 15px;
+        }
     }
     aside{
         article{
@@ -20,23 +20,56 @@
             padding: 20px 30px 20px 30px;
         }
     }
-
-    .inputFooterUno{
-        width: 300px;
-        font-size: 1.1rem;
+    footer{
+        article{
+            div{
+                .imgFooter img{
+                    width: 90px;
+                    margin-left: 10px;
+                }
+            }
+            form{
+                .inputFooterUno{
+                    width: 330px;
+                    font-size: 1.1rem;
+                }
+                .inputFooterDos{
+                    width: 110px;
+                    font-size: 1.1rem;
+                }
+            }
+            footer h3{
+                font-size: 1.2rem;
+            }
+            footer p{
+                font-size: 0.9rem;
+            }
+        }
     }
-    .inputFooterDos{
-        width: 80px;
-        font-size: 1.1rem;
+    .sectionSuscripcionUno{
+        .imagenSuscripcion{
+            width: 31.25rem;
+            height: 31.25rem;
+        }
     }
-    .imgFooter img{
-        width: 95px;
-        margin-left: 10px;
+    .sectionSuscripcionTres{
+        .articleSuscripcionTres{
+            img{
+                margin-left: 5rem;
+            }
+        }
+        h3{
+            margin-left: 90px;
+        }
     }
-    footer h3{
-        font-size: 1.2rem;
+    .sectionSuscripcionCuatro{
+        h3{
+            margin-left: 30px;
+        }
     }
-    footer p{
-        font-size: 0.9rem;
+    .sectionContactoUno{
+        .inputCUno{
+            @include inputContacto(20rem, 3.125rem, .3125rem);
+        }
     }
 }

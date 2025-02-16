@@ -1,11 +1,14 @@
 header{
     width: 100%;
     nav{
-        ul{
+        .navbar{
             background-color: map-get($colores , color10 );
             @include flexbox(flex, row, center, space-between, 0rem);
             height: 65px;
             overflow-y: hidden;
+            position: sticky;
+            z-index: 1000;
+            top: 0rem;
             li{
                 list-style: none;
                 a{
@@ -25,3 +28,4 @@ header{
         }
     }
 }
+/*                      ARREGLAR EL MENU DE LINEAS               */

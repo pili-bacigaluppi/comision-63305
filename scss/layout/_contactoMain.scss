@@ -1,9 +1,17 @@
 .sectionContactoUno{
-    @include flexbox(flex, column, center, baseline, 3.75rem);
+    @include flexbox(flex, column, center, auto, 3.75rem);
     padding: 1.875rem;
 }
 .galeriaContacto{
-    @extend .galeria;
+    display: flex;
+    gap: 5%;
+    .imgGaleria1{
+        width: 30%;
+        height: 30%;
+    }
+    .imgGaleria2{
+        @extend .imgGaleria1;
+    }
 }
 .sectionContactoDos{
     @include flexbox(flex, column, center, baseline, 2.5rem);

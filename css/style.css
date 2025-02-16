@@ -1,17 +1,931 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 5 | @import "./utilities/extend";
- *   |         ^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\style.scss 5:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @import \"./utilities/extend\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\style.scss 5:9  root stylesheet";
+@charset "UTF-8";
+/*TIPOGRAFÍAS*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*font-family: "Lato", serif;*/
+/*titulos y elementos generales*/
+h1 {
+  font-size: 4rem;
+  color: #7B6674;
+  width: 450px;
+  margin: 20px;
 }
+
+h2 {
+  color: #7B6674;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+h3 {
+  color: #7B6674;
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-weight: 800;
+  color: #7B6674;
+  font-size: 1.2rem;
+}
+
+span {
+  font-weight: bolder;
+}
+
+hr {
+  border: 1px solid #7B6674;
+}
+
+/*UTILITIES*/
+/*            VARIABLES         */
+/*              MAPAS             */
+/*        VER MIXIN DE GRID           */
+/*BASE*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: #C5CBDB;
+  font-family: "Lato", serif;
+}
+
+/*LAYOUTS*/
+header {
+  width: 100%;
+}
+header nav .navbar {
+  background-color: #574964;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0rem;
+  height: 65px;
+  overflow-y: hidden;
+  position: sticky;
+  z-index: 1000;
+  top: 0rem;
+}
+header nav .navbar li {
+  list-style: none;
+}
+header nav .navbar li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+header nav .navbar li a .menuLines {
+  display: none;
+}
+header nav .navbar li a .logo {
+  width: 176px;
+  height: 63px;
+}
+
+/*                      ARREGLAR EL MENU DE LINEAS               */
+.sectionIndexUno {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+  background-image: url(../assets/vista-desktop/pag-principal/fondo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.sectionIndexUno article {
+  background-color: rgba(255, 255, 255, 0.527);
+  width: 673.06px;
+  height: 500px;
+  align-content: center;
+}
+.sectionIndexUno article .titulos {
+  padding-bottom: 20px;
+}
+.sectionIndexUno article .titulos .botonIndex {
+  background-color: #DED3CD;
+  color: #7B6674;
+  border-radius: 3.0625rem;
+  font-size: 1rem;
+  padding: 30px 80px 30px 80px;
+  border: none;
+  margin-left: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 5px 10px 15px #86707E;
+}
+
+.sectionDos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 30px;
+}
+.sectionDos hr {
+  width: 441.68px;
+  border: 0.3px solid #7B6674;
+}
+.sectionDos .galeria {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+}
+.sectionDos .galeria .imgGaleria1, .sectionDos .galeria .imgGaleria2 {
+  width: 30%;
+  height: 30%;
+}
+aside {
+  background-image: url(../assets/vista-desktop/pag-principal/fondo-reseñasf.png);
+  min-height: 690px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+aside h2 {
+  color: #DED3CD;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+aside button {
+  background-color: #DED3CD;
+  color: #574964;
+  border-radius: 1.875rem;
+  font-size: 1.4rem;
+  padding: 1.25rem;
+  width: 37rem;
+}
+aside article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /*             CORREGIR EN MEDIA QUERIEE               */
+  width: 100%;
+}
+aside article div {
+  background-color: #fff5f5;
+  width: 372px;
+  height: 400px;
+  justify-items: center;
+  padding-top: 30px;
+}
+aside article div p {
+  font-size: 0.8375rem;
+  width: 300px;
+  text-align: center;
+  margin: 30px;
+}
+aside article div img {
+  border-radius: 47px;
+  width: 106px;
+  height: 103px;
+}
+aside article div .reseñaHidden {
+  display: none;
+}
+aside article div .flechaIndex {
+  display: none;
+}
+
+.sectionNosotrosUno {
+  display: grid;
+  grid-template-columns: repeat(8, 180px);
+  grid-template-rows: repeat(8, 80px);
+  justify-items: center;
+  justify-content: center;
+}
+.sectionNosotrosUno h2 {
+  font-weight: 600;
+  font-size: 3rem;
+  grid-column: 2/5;
+  grid-row: 2/4;
+  align-self: center;
+  color: #9F8383;
+}
+.sectionNosotrosUno p {
+  font-size: 1rem;
+  text-align: justify;
+  width: 31.25rem;
+  grid-column: 2/5;
+  grid-row: 4/6;
+  align-self: center;
+}
+.sectionNosotrosUno img {
+  max-width: 31.25rem;
+  min-width: 16.25rem;
+  height: 34.375rem;
+  grid-column: 5/8;
+  grid-row: 1/5;
+  object-fit: cover;
+}
+
+.sectionNosotrosDos {
+  background-image: url(../assets/vista-desktop/pag-sobrenosotros/fondo.png);
+  background-color: #574964;
+  height: 36.5rem;
+  display: grid;
+  place-content: center;
+}
+.sectionNosotrosDos div {
+  background-color: #C5CBDB;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 1157px;
+  height: 414px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+.sectionNosotrosDos .imagen1Left {
+  width: 16.25rem;
+  position: absolute;
+  height: 11.875rem;
+  left: -6%;
+  top: 51rem;
+  z-index: 10;
+}
+.sectionNosotrosDos .imagen2Right {
+  width: 18.6875rem;
+  position: absolute;
+  height: 9.6875rem;
+  left: 73.2rem;
+  top: 64rem;
+}
+.sectionNosotrosDos .imagen3Right {
+  width: 17rem;
+  position: absolute;
+  height: 8.75rem;
+  left: 71rem;
+  top: 70rem;
+}
+.sectionNosotrosDos .imagen4Right {
+  width: 16.25rem;
+  position: absolute;
+  height: 11.875rem;
+  left: 73.5rem;
+  top: 74rem;
+}
+.sectionNosotrosDos .imagen5Left {
+  width: 18.6875rem;
+  position: absolute;
+  height: 9.6875rem;
+  left: -8%;
+  top: 40.4rem;
+}
+.sectionNosotrosDos .imagen6Left {
+  width: 17rem;
+  position: absolute;
+  height: 8.75rem;
+  left: -10%;
+  top: 47rem;
+}
+
+.articleLineupUno {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0rem;
+  background-color: #B49797;
+  color: #FFFFFF;
+  height: 45px;
+  font-size: 1.3rem;
+}
+.articleLineupUno button {
+  width: 294px;
+  height: 32px;
+  background-color: #FFFFFF;
+  color: #B49797;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 15px;
+}
+
+.sectionLySUno {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  gap: 80px;
+}
+.sectionLySUno img {
+  width: 43.75rem;
+  height: 43.75rem;
+  object-fit: contain;
+}
+.sectionLySUno article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.875rem;
+  text-align: center;
+}
+.sectionLySUno article h2 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.sectionLineupDos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.875rem;
+  margin-top: 30px;
+}
+.sectionLineupDos article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem 1.25rem;
+  flex-wrap: wrap;
+  width: 70rem;
+  text-align: center;
+}
+.sectionLineupDos article div {
+  background-color: #D9D9D9;
+  width: 20rem;
+  height: 12rem;
+  object-fit: contain;
+}
+.sectionLineupDos article div img {
+  width: 15.625rem;
+  height: 10rem;
+}
+
+.sectionContactoUno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: auto;
+  gap: 3.75rem;
+  padding: 1.875rem;
+}
+
+.galeriaContacto {
+  display: flex;
+  gap: 5%;
+}
+.galeriaContacto .imgGaleria1, .galeriaContacto .imgGaleria2, .galeriaContacto .sectionDos .galeria .imgGaleria2, .sectionDos .galeria .galeriaContacto .imgGaleria2 {
+  width: 30%;
+  height: 30%;
+}
+.sectionContactoDos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  gap: 2.5rem;
+  padding: 2.5rem 0rem 2.5rem 0rem;
+}
+
+/*           PREGUNTAR EXTEND              */
+/*FALTA SECTION UNO*/
+.sectionSuscripcionUno {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: auto;
+  gap: 0rem;
+}
+.sectionSuscripcionUno .imagenSuscripcion {
+  width: 50rem;
+  height: 40.9375rem;
+  object-fit: cover;
+}
+.sectionSuscripcionUno .divSuscripcionUno {
+  color: #86707E;
+  font-weight: 700;
+  align-self: flex-end;
+  margin: 1.875rem 1.875rem;
+}
+.sectionSuscripcionUno .divSuscripcionUno h2 {
+  font-weight: 800;
+  font-size: 3.5rem;
+  text-align: left;
+}
+
+.sectionSuscripcionDos {
+  background-color: #574964;
+}
+.sectionSuscripcionDos h3 {
+  color: #D9D9D9;
+  font-weight: 500;
+  text-align: center;
+  padding: 26px;
+}
+.sectionSuscripcionDos p {
+  color: #D9D9D9;
+  text-align: center;
+  padding: 20px;
+}
+.sectionSuscripcionDos article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+.sectionSuscripcionDos article div {
+  background-color: #C5CBDB;
+  width: 30rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.sectionSuscripcionDos article div p {
+  color: #000000;
+}
+
+.sectionSuscripcionTres h3 {
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 50px 0px 20px 190px;
+}
+.sectionSuscripcionTres .articleSuscripcionTres {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: repeat(4, 200px);
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.sectionSuscripcionTres .articleSuscripcionTres img {
+  width: 10.625rem;
+  height: 9.375rem;
+  background-color: #86707E;
+  border-radius: 40px;
+  padding: 10px;
+  margin-left: 160px;
+}
+
+.sectionSuscripcionCuatro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0rem;
+  padding: 40px;
+}
+.sectionSuscripcionCuatro h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.sectionSuscripcionCuatro img {
+  width: 33rem;
+  height: 25rem;
+  background-color: #574964;
+  padding: 1.25rem;
+}
+
+.sectionSuscripcionCinco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  background-color: #574964;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.sectionSuscripcionCinco h3 {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #D9D9D9;
+}
+.sectionSuscripcionCinco img {
+  width: 45rem;
+  height: 16rem;
+  object-fit: cover;
+}
+
+.titulosS {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  text-align: center;
+  margin: 30px 0px;
+}
+footer hr {
+  height: 334.01px;
+}
+footer article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer article p {
+  color: #7B6674;
+  font-size: 1rem;
+  width: 98%;
+}
+footer article div {
+  display: flex;
+  gap: 20px;
+}
+footer article div img {
+  width: 130px;
+}
+
+/*COMPONENTS*/
+.formC {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 200px;
+  row-gap: 100px;
+  justify-content: center;
+  padding: 30px;
+}
+.formC .divCUno, .formC .divCDos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: max-content;
+}
+.formC .divCUno:before, .formC .divCDos:before {
+  content: "";
+  background-color: #574964;
+  height: 3px;
+  width: 99%;
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+}
+.formC .divCDos {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.inputFooterUno {
+  width: 25.9375rem;
+  height: 3.125rem;
+  font-family: "Lato", serif;
+  font-size: 1.25rem;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.inputFooterDos {
+  width: 9.0625rem;
+  height: 3.125rem;
+  font-family: "Lato", serif;
+  font-size: 1.25rem;
+  background-color: #FFFFFF;
+  border: none;
+  background-color: #7B6674;
+  color: #FFFFFF;
+}
+
+.inputCUno {
+  width: 26.25rem;
+  height: 3.125rem;
+  border-radius: 0.3125rem;
+}
+
+.inputCDos {
+  width: 65rem;
+  height: 3.125rem;
+  border-radius: 0.3125rem;
+}
+
+.inputCEnviar {
+  width: 18.75rem;
+  height: 3.125rem;
+  border-radius: 0.625rem;
+  background-color: #574964;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 3.9375rem;
+  }
+  .navbar .menuPopUp {
+    display: none;
+  }
+  .navbar .menuLines {
+    display: block;
+    margin-right: 15px;
+  }
+  aside article {
+    padding: 0rem 1rem;
+  }
+  aside button {
+    font-size: 1.4rem;
+    padding: 20px 30px 20px 30px;
+  }
+  footer article div .imgFooter img {
+    width: 90px;
+    margin-left: 10px;
+  }
+  footer article form .inputFooterUno {
+    width: 330px;
+    font-size: 1.1rem;
+  }
+  footer article form .inputFooterDos {
+    width: 110px;
+    font-size: 1.1rem;
+  }
+  footer article footer h3 {
+    font-size: 1.2rem;
+  }
+  footer article footer p {
+    font-size: 0.9rem;
+  }
+  .sectionSuscripcionUno .imagenSuscripcion {
+    width: 31.25rem;
+    height: 31.25rem;
+  }
+  .sectionSuscripcionTres .articleSuscripcionTres img {
+    margin-left: 5rem;
+  }
+  .sectionSuscripcionTres h3 {
+    margin-left: 90px;
+  }
+  .sectionSuscripcionCuatro h3 {
+    margin-left: 30px;
+  }
+  .sectionContactoUno .inputCUno {
+    width: 20rem;
+    height: 3.125rem;
+    border-radius: 0.3125rem;
+  }
+}
+@media (max-width: 768px) {
+  .sectionIndexUno img {
+    display: none;
+  }
+  .sectionIndexUno .articleUno {
+    height: 350px;
+    width: 100%;
+  }
+  .sectionIndexUno .articleUno .titulos {
+    padding-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .sectionIndexUno .articleUno .titulos h1 {
+    font-size: 45px;
+  }
+  .sectionNosotrosUno img {
+    display: none;
+    grid-column: unset;
+  }
+  .inputCDos, .inputCUno {
+    width: 500px;
+  }
+  aside {
+    padding: 2.5rem;
+  }
+  aside h2 {
+    font-size: 2rem;
+  }
+  aside article {
+    flex-wrap: wrap;
+  }
+  aside article div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.625rem;
+    width: 80%;
+    height: 130px;
+    padding: 20px;
+    overflow-y: hidden;
+  }
+  aside article div .flechaIndex {
+    display: block;
+  }
+  aside article div .reseñaHidden {
+    display: none;
+  }
+  aside article div .reseñaNormal {
+    display: none;
+  }
+  aside article div img {
+    object-fit: cover;
+    height: 100%;
+  }
+  aside button {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .sectionSuscripcionUno .imagenSuscripcion {
+    width: 28rem;
+    height: 28rem;
+  }
+  .sectionSuscripcionUno .divSuscripcionUno h2 {
+    font-weight: 800;
+    font-size: 2.8rem;
+    text-align: left;
+  }
+  .sectionSuscripcionDos article div {
+    width: 37.5rem;
+    height: 18rem;
+  }
+  .sectionSuscripcionTres h3 {
+    font-size: 1.8rem;
+  }
+  .sectionSuscripcionTres .articleSuscripcionTres p {
+    font-size: 1.2rem;
+    width: 500px;
+    padding-left: 40px;
+  }
+  .sectionSuscripcionCuatro {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+  .sectionContactoUno .inputCUno {
+    width: 30rem;
+    height: 3.125rem;
+    border-radius: 0.3125rem;
+  }
+  footer article .imgFooter img {
+    width: 80px;
+    margin: 0;
+  }
+  footer article form .inputFooterUno {
+    width: 270px;
+    font-size: 1rem;
+  }
+  footer article form .inputFooterDos {
+    width: 70px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 425px) {
+  .sectionDos hr {
+    width: 300px;
+  }
+  .sectionSuscripcionUno {
+    position: relative;
+    height: 650px;
+  }
+  .sectionSuscripcionUno .imagenSuscripcion {
+    height: 100%;
+  }
+  .sectionSuscripcionUno .divSuscripcionUno {
+    position: absolute;
+    z-index: 30;
+    background-color: rgba(107, 85, 100, 0.6980392157);
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+  }
+  .sectionSuscripcionUno .divSuscripcionUno h2 {
+    color: #DED3CD;
+    padding: 440px 0px 0px 20px;
+  }
+  .sectionSuscripcionUno .divSuscripcionUno p {
+    color: #DED3CD;
+    padding: 0px 0px 10px 30px;
+  }
+  .sectionSuscripcionDos article div {
+    width: 360px;
+    height: 18rem;
+  }
+  .sectionSuscripcionTres h3 {
+    text-align: center;
+    margin: 40px 0px;
+  }
+  .sectionSuscripcionTres .articleSuscripcionTres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .sectionSuscripcionTres .articleSuscripcionTres img {
+    margin: 0px;
+  }
+  .sectionSuscripcionTres .articleSuscripcionTres p {
+    font-size: 1rem;
+    width: 80%;
+    text-align: center;
+    padding: 0%;
+    margin: 15px 0px 30px 0px;
+  }
+  .sectionSuscripcionCuatro h3 {
+    margin-left: 0px;
+    font-size: 1.8rem;
+  }
+  .sectionSuscripcionCinco {
+    padding: 20px 0px 0px 0px;
+    gap: 0px;
+  }
+  .sectionSuscripcionCinco img {
+    width: 400px;
+    object-fit: contain;
+  }
+  .sectionContactoUno {
+    gap: 20px;
+  }
+  .sectionContactoUno .inputCDos, .sectionContactoUno .inputCUno {
+    width: 280px;
+  }
+  footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer article h3 {
+    font-size: 1.3rem;
+  }
+  footer article .imgFooter {
+    flex-direction: row;
+    margin: auto;
+  }
+  footer .lineaFooter {
+    display: none;
+  }
+  .inputCDos, .inputCUno {
+    width: 280px;
+  }
+}
+@media (max-width: 320px) {
+  .inputFooterUno, .inputFooterDos {
+    width: 240px;
+  }
+  .sectionSuscripcionDos .pSeparado {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+  .sectionSuscripcionDos article div {
+    width: 290px;
+  }
+  .sectionSuscripcionTres h3 {
+    font-size: 1.5rem;
+  }
+  .sectionSuscripcionTres .articleSuscripcionTres img {
+    width: 140px;
+    height: auto;
+  }
+  .sectionSuscripcionTres .articleSuscripcionTres p {
+    font-size: 0.9rem;
+  }
+  .sectionSuscripcionCuatro {
+    padding: 0px;
+    margin: 40px 0px 40px 0px;
+  }
+  .sectionSuscripcionCuatro h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+  .sectionSuscripcionCuatro img {
+    width: 410px;
+    height: auto;
+    object-fit: contain;
+    padding: 0px;
+  }
+  .sectionSuscripcionCinco img {
+    width: 340px;
+  }
+  .sectionSuscripcionCinco h3 {
+    font-size: 1.7rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

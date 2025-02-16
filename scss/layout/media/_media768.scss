@@ -1,73 +1,120 @@
 @media(max-width: 768px){
-    .sectionIndexUno img{
-        display: none;
+    .sectionIndexUno{
+        img{
+            display: none;
+        }
+        .articleUno{
+            height: 350px;
+            width: 100%;
+            .titulos{
+                padding-bottom: 20px;
+                text-align: center;
+                @include flexbox(flex, column, center, center, 0px);
+                h1{
+                    font-size: 45px;
+                }
+            }
+        }
     }
-    .flechaIndex{
-        display: block;
-    }
-    h1{
-        font-size: 40px;
-    }
-    .articleUno{
-        height: 100%;
-        width: 100%;
-    }
-    .flechaDropdown{
-        display: inline-block;
-    }
-    .reseñaHidden{
-        display: none;
-    }
-    .sectionNosotrosUno img{
+    .sectionNosotrosUno{ 
+        img{
         display: none;
         grid-column:unset;
+        }
     }
     .inputCDos, .inputCUno{
         width: 500px;
     }
     aside{
-        padding: 40px;
+        padding: 2.5rem;
+        h2{
+            font-size: 2rem;
+        }
+        article{
+            flex-wrap: wrap;
+            div{
+                @include flexbox(flex, row, center, space-evenly, .625rem);
+                width: 80%;
+                height: 130px;
+                padding: 20px;
+                overflow-y: hidden;
+                .flechaIndex{
+                    display: block;
+                }
+                .reseñaHidden{
+                    display: none;
+                }
+                .reseñaNormal{
+                    display: none;
+                }
+                img{
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+        }
+        button{
+            width: 100%;
+            font-size: 1.2rem;
+        }
     }
-    aside h2{
-        font-size: 2rem;
+    .sectionSuscripcionUno{
+        .imagenSuscripcion{
+            width: 28rem;
+            height: 28rem;
+        }
+        .divSuscripcionUno{
+            h2{
+                font-weight: 800;
+                font-size: 2.8rem;
+                text-align: left;
+            }
+        }
     }
-    .reseñas{
-        flex-wrap: wrap;
+    .sectionSuscripcionDos{
+        article{
+            div{
+                width: 37.5rem;
+                height: 18rem;
+            }
+        }
     }
-    .cadaReseña{
-        @include flexbox(flex, row, center, space-evenly, .625rem);
-        width: 80%;
-        height: 130px;
-        padding: 20px;
-        overflow-y: hidden;
+    .sectionSuscripcionTres{
+        h3{
+            font-size: 1.8rem;
+        }
+        .articleSuscripcionTres{
+            p{
+                font-size: 1.2rem;
+                width: 500px;
+                padding-left: 40px;
+            }
+        }
     }
-    .reseñaHidden{
-        display: block;
+    .sectionSuscripcionCuatro{
+        @include flexbox(flex, column-reverse, center, space-evenly, 2rem);
     }
-    .reseñaNormal{
-        display: none;
+    .sectionContactoUno{
+        .inputCUno{
+            @include inputContacto(30rem, 3.125rem, .3125rem);
+        }
     }
-    .cadaReseña img{
-        object-fit: contain;
-        min-width: 30%;
-        min-height: 100%;
-        border-radius: 100%;
-    }
-    aside .botonIndex{
-        width: 100%;
-        font-size: 1.2rem;
-    }
-    .imgFooter img{
-        width: 80px;
-        margin: 0;
-    }
-    .inputFooterUno{
-        width: 270px;
-        font-size: 1rem;
-    }
-    .inputFooterDos{
-        width: 70px;
-        font-size: 1rem;
+    footer{
+        article{
+            .imgFooter img{
+                width: 80px;
+                margin: 0;
+            }
+            form{
+                .inputFooterUno{
+                    width: 270px;
+                    font-size: 1rem;
+                }
+                .inputFooterDos{
+                    width: 70px;
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 }
-/*       FALTA ACOMODARRRR               */

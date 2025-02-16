@@ -3,29 +3,92 @@
         hr{
             width: 300px;
         }
+    }
+    .sectionSuscripcionUno{
+        position: relative;
+        height: 650px;
+        .imagenSuscripcion{
+            height: 100%;
+        }
+        .divSuscripcionUno{
+            position: absolute;
+            z-index: 30;
+            background-color: map-get($colores, color8tras);
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            h2{
+                color: map-get($colores, color4);
+                padding: 440px 0px 0px 20px;
+            }
+            p{
+                color: map-get($colores, color4);
+                padding: 0px 0px 10px 30px;
+            }
+        }
+    }
+    .sectionSuscripcionDos{
         article{
-            .imgGaleria1{
-                display: none;
+            div{
+                width: 360px;
+                height: 18rem;
             }
-            .imgGaleria2{
-                width: 50%;
-                height: 50%;
+        }
+    }
+    .sectionSuscripcionTres{
+        h3{
+            text-align: center;
+            margin: 40px 0px;
+        }
+        .articleSuscripcionTres{
+            @include flexbox(flex, column, center, center, 10px);
+            img{
+                margin: 0px;
             }
+            p{
+                font-size: 1rem;
+                width: 80%;
+                text-align: center;
+                padding: 0%;
+                margin: 15px 0px 30px 0px;
+            }
+        }
+    }
+    .sectionSuscripcionCuatro{
+        h3{
+            margin-left: 0px;
+            font-size: 1.8rem;
+        }
+    }
+    .sectionSuscripcionCinco{
+        padding: 20px 0px 0px 0px;
+        gap: 0px;
+        img{
+            width: 400px;
+            object-fit: contain;
+        }
+    }
+    .sectionContactoUno{
+        gap: 20px;
+        .inputCDos, .inputCUno{
+            width: 280px;
         }
     }
     footer{
         flex-direction: column;
         gap: 2rem;
-        h3{
-        font-size: 1.3rem;
+        article{
+            h3{
+            font-size: 1.3rem;
+            }
+            .imgFooter{
+                flex-direction: row;
+                margin: auto;
+            }
         }
-    }
-    .imgFooter{
-        flex-direction: row;
-        margin: auto;
-    }
-    .lineaFooter{
-        display: none;
+        .lineaFooter{
+            display: none;
+        }
     }
     .inputCDos, .inputCUno{
         width: 280px;

@@ -8,13 +8,16 @@
         width: 673.06px;
         height: 500px;
         align-content: center;
-        .botonIndex{
-            @include botones(map-get($colores, color4 ), map-get($colores, color8 ), 3.0625rem, 1rem, 30px 80px 30px 80px);
-            border: none;
-            margin-left: 20px;
-            font-weight: 700;
-            cursor: pointer;
-            box-shadow: 5px 10px 15px map-get($colores , color9 );
+        .titulos{
+            padding-bottom: 20px;
+            .botonIndex{
+                @include botones(map-get($colores, color4 ), map-get($colores, color8 ), 3.0625rem, 1rem, 30px 80px 30px 80px);
+                border: none;
+                margin-left: 20px;
+                font-weight: 700;
+                cursor: pointer;
+                box-shadow: 5px 10px 15px map-get($colores , color9 );
+            }
         }
     }
 }
@@ -28,6 +31,7 @@
     .galeria{
         display: flex;
         gap: 5%;
+        justify-content: center;
         .imgGaleria1{
             width: 30%;
             height: 30%;

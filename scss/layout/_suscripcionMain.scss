@@ -1,18 +1,21 @@
 /*FALTA SECTION UNO*/
-.imagenSuscripcion{
-    width: 50rem;
-    height: 40.9375rem;
-    object-fit: cover;
-}
-.divSuscripcionUno{
-    color: map-get($colores, color9 );
-    font-weight: 700;
-    align-self: flex-end;
-    margin: 0px 0px 30px 70px;
-    h2{
-        font-weight: 800;
-        font-size: 3.5rem;
-        text-align: left;
+.sectionSuscripcionUno{
+    @include flexbox(flex, row, center, auto, 0rem);
+    .imagenSuscripcion{
+        width: 50rem;
+        height: 40.9375rem;
+        object-fit: cover;
+    }
+    .divSuscripcionUno{
+        color: map-get($colores, color9 );
+        font-weight: 700;
+        align-self: flex-end;
+        margin: 1.875rem 1.875rem;
+        h2{
+            font-weight: 800;
+            font-size: 3.5rem;
+            text-align: left;
+        }
     }
 }
 .sectionSuscripcionDos{
@@ -42,25 +45,27 @@
         }
     }
 }
-.sectionSuscripcionTres h3{
-    font-weight: 900;
-    font-size: 2rem;
-    margin: 50px 0px 20px 190px;
-}
-.articleSuscripcionTres{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: repeat(4, 200px);
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3rem;
-    img{
-        width: 10.625rem;
-        height: 9.375rem;
-        background-color: map-get($colores, color9);
-        border-radius: 40px;
-        padding: 10px;
-        margin-left: 160px;
+.sectionSuscripcionTres{
+    h3{
+        font-weight: 900;
+        font-size: 2rem;
+        margin: 50px 0px 20px 190px;
+    }
+    .articleSuscripcionTres{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: repeat(4, 200px);
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+        img{
+            width: 10.625rem;
+            height: 9.375rem;
+            background-color: map-get($colores, color9);
+            border-radius: 40px;
+            padding: 10px;
+            margin-left: 160px;
+        }
     }
 }
 .sectionSuscripcionCuatro{
