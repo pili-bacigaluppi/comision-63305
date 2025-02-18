@@ -1,0 +1,11 @@
+.galerias{
+    display: flex;
+    gap: 5%;
+    .imgGaleria2{
+        width: 30%;
+        height: 30%;
+    }
+    .imgGaleria1{
+        @extend .imgGaleria2;
+    }
+}

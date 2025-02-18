@@ -7,13 +7,25 @@
             height: 350px;
             width: 100%;
             .titulos{
-                padding-bottom: 20px;
+                margin-top: 20px;
                 text-align: center;
                 @include flexbox(flex, column, center, center, 0px);
+                button{
+                    margin: 0px 20px 20px 20px;
+                    padding: 30px 50px;
+                }
                 h1{
                     font-size: 45px;
                 }
             }
+        }
+    }
+    .sectionDos{
+        h2{
+            font-size: 1.6rem;
+        }
+        hr{
+            width: 350px;
         }
     }
     .sectionNosotrosUno{ 
@@ -21,9 +33,6 @@
         display: none;
         grid-column:unset;
         }
-    }
-    .inputCDos, .inputCUno{
-        width: 500px;
     }
     aside{
         padding: 2.5rem;
@@ -95,8 +104,13 @@
         @include flexbox(flex, column-reverse, center, space-evenly, 2rem);
     }
     .sectionContactoUno{
-        .inputCUno{
-            @include inputContacto(30rem, 3.125rem, .3125rem);
+        .formC{
+            .inputCUno{
+                @include inputContacto(30rem, 3.125rem, .3125rem);
+            }
+            .inputCDos{
+                @include inputContacto(30rem, 3.125rem, .3125rem);
+            }
         }
     }
     footer{

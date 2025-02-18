@@ -2,7 +2,7 @@
     @include flexbox(flex, row, center, center, 0rem);
     background-image: url(../assets/vista-desktop/pag-principal/fondo.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     article{
         background-color: rgba(255, 255, 255, 0.527);
         width: 673.06px;
@@ -28,18 +28,6 @@
         width: 441.68px;
         border: 0.3px solid map-get($colores, color8 );
     }
-    .galeria{
-        display: flex;
-        gap: 5%;
-        justify-content: center;
-        .imgGaleria1{
-            width: 30%;
-            height: 30%;
-        }
-        .imgGaleria2{
-            @extend .imgGaleria1;
-        }
-    }
 }
 aside{
     background-image: url(../assets/vista-desktop/pag-principal/fondo-reseñasf.png);
@@ -56,12 +44,6 @@ aside{
     }
     article{
         @include flexbox(flex, row, center, center, 1rem);
-
-        
-/*             CORREGIR EN MEDIA QUERIEE               */
-
-
-
         width: 100%;
         div{
             background-color: map-get($colores, color1);

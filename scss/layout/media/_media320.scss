@@ -1,6 +1,50 @@
 @media(max-width: 320px){
-    .inputFooterUno, .inputFooterDos{
-        width: 240px;
+    .sectionIndexUno{
+        background-size: 200% contain;
+        .articleUno{
+            .titulos{
+                h1{
+                    font-size: 2.4rem;
+                }
+                .botonIndex{
+                    font-size: .8rem;
+                    padding: 15px 30px;
+                }
+            }
+        }
+    }
+    .sectionDos{
+        hr{
+            width: 230px;
+        }
+        .galerias{
+            .imgGaleria2{
+                width: 150px;
+                height: auto;
+            }
+        }
+    }
+    aside{
+        gap: 20px;
+        padding: 0px 20px;
+        article{
+            padding: 0px;
+            div{
+                width: 305px;
+                gap: 0px;
+                padding: 8px;
+                p{
+                    width: 397px;
+                }
+                .flechaIndex{
+                    width: 170px;
+                }
+            }
+        }
+        button{
+            font-size: 1rem;
+            padding: 20px 22px;
+        }
     }
     .sectionSuscripcionDos{
         .pSeparado{
@@ -47,6 +91,16 @@
         }
         h3{
             font-size: 1.7rem;
+        }
+    }
+    footer{
+        article{
+            form{
+                .inputFooterUno, .inputFooterDos{
+                    width: 240px;
+                }
+            }
+            
         }
     }
 }

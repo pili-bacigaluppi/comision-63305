@@ -98,7 +98,7 @@ header nav .navbar li a .logo {
   gap: 0rem;
   background-image: url(../assets/vista-desktop/pag-principal/fondo.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 .sectionIndexUno article {
   background-color: rgba(255, 255, 255, 0.527);
@@ -134,15 +134,7 @@ header nav .navbar li a .logo {
   width: 441.68px;
   border: 0.3px solid #7B6674;
 }
-.sectionDos .galeria {
-  display: flex;
-  gap: 5%;
-  justify-content: center;
-}
-.sectionDos .galeria .imgGaleria1, .sectionDos .galeria .imgGaleria2 {
-  width: 30%;
-  height: 30%;
-}
+
 aside {
   background-image: url(../assets/vista-desktop/pag-principal/fondo-reseñasf.png);
   min-height: 690px;
@@ -171,7 +163,6 @@ aside article {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  /*             CORREGIR EN MEDIA QUERIEE               */
   width: 100%;
 }
 aside article div {
@@ -378,23 +369,6 @@ aside article div .flechaIndex {
   padding: 1.875rem;
 }
 
-.galeriaContacto {
-  display: flex;
-  gap: 5%;
-}
-.galeriaContacto .imgGaleria1, .galeriaContacto .imgGaleria2, .galeriaContacto .sectionDos .galeria .imgGaleria2, .sectionDos .galeria .galeriaContacto .imgGaleria2 {
-  width: 30%;
-  height: 30%;
-}
-.sectionContactoDos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: baseline;
-  gap: 2.5rem;
-  padding: 2.5rem 0rem 2.5rem 0rem;
-}
-
 /*           PREGUNTAR EXTEND              */
 /*FALTA SECTION UNO*/
 .sectionSuscripcionUno {
@@ -583,11 +557,14 @@ footer article div img {
   bottom: 0;
   left: 2px;
 }
-.formC .divCDos {
-  margin-left: 5%;
-  margin-right: 5%;
+.galerias {
+  display: flex;
+  gap: 5%;
 }
-
+.galerias .imgGaleria2, .galerias .imgGaleria1 {
+  width: 30%;
+  height: 30%;
+}
 .inputFooterUno {
   width: 25.9375rem;
   height: 3.125rem;
@@ -643,12 +620,38 @@ footer article div img {
     display: block;
     margin-right: 15px;
   }
+  .sectionIndexUno h1 {
+    font-size: 3.7rem;
+  }
   aside article {
     padding: 0rem 1rem;
   }
   aside button {
     font-size: 1.4rem;
-    padding: 20px 30px 20px 30px;
+    padding: 20px 30px;
+  }
+  .sectionSuscripcionUno .imagenSuscripcion {
+    width: 31.25rem;
+    height: 31.25rem;
+  }
+  .sectionSuscripcionTres .articleSuscripcionTres img {
+    margin-left: 5rem;
+  }
+  .sectionSuscripcionTres h3 {
+    margin-left: 90px;
+  }
+  .sectionSuscripcionCuatro h3 {
+    margin-left: 30px;
+  }
+  .sectionContactoUno .formC .inputCUno {
+    width: 20rem;
+    height: 3.125rem;
+    border-radius: 0.3125rem;
+  }
+  .sectionContactoUno .formC .inputCDos {
+    width: 52.5rem;
+    height: 3.125rem;
+    border-radius: 0.3125rem;
   }
   footer article div .imgFooter img {
     width: 90px;
@@ -668,24 +671,6 @@ footer article div img {
   footer article footer p {
     font-size: 0.9rem;
   }
-  .sectionSuscripcionUno .imagenSuscripcion {
-    width: 31.25rem;
-    height: 31.25rem;
-  }
-  .sectionSuscripcionTres .articleSuscripcionTres img {
-    margin-left: 5rem;
-  }
-  .sectionSuscripcionTres h3 {
-    margin-left: 90px;
-  }
-  .sectionSuscripcionCuatro h3 {
-    margin-left: 30px;
-  }
-  .sectionContactoUno .inputCUno {
-    width: 20rem;
-    height: 3.125rem;
-    border-radius: 0.3125rem;
-  }
 }
 @media (max-width: 768px) {
   .sectionIndexUno img {
@@ -696,7 +681,7 @@ footer article div img {
     width: 100%;
   }
   .sectionIndexUno .articleUno .titulos {
-    padding-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -704,15 +689,22 @@ footer article div img {
     justify-content: center;
     gap: 0px;
   }
+  .sectionIndexUno .articleUno .titulos button {
+    margin: 0px 20px 20px 20px;
+    padding: 30px 50px;
+  }
   .sectionIndexUno .articleUno .titulos h1 {
     font-size: 45px;
+  }
+  .sectionDos h2 {
+    font-size: 1.6rem;
+  }
+  .sectionDos hr {
+    width: 350px;
   }
   .sectionNosotrosUno img {
     display: none;
     grid-column: unset;
-  }
-  .inputCDos, .inputCUno {
-    width: 500px;
   }
   aside {
     padding: 2.5rem;
@@ -779,7 +771,12 @@ footer article div img {
     justify-content: space-evenly;
     gap: 2rem;
   }
-  .sectionContactoUno .inputCUno {
+  .sectionContactoUno .formC .inputCUno {
+    width: 30rem;
+    height: 3.125rem;
+    border-radius: 0.3125rem;
+  }
+  .sectionContactoUno .formC .inputCDos {
     width: 30rem;
     height: 3.125rem;
     border-radius: 0.3125rem;
@@ -798,8 +795,31 @@ footer article div img {
   }
 }
 @media (max-width: 425px) {
+  .sectionIndexUno .articleUno .titulos h1 {
+    font-size: 2.7rem;
+    width: 90%;
+  }
+  .sectionIndexUno .articleUno .titulos .botonIndex {
+    padding: 20px 40px;
+    font-size: 1rem;
+    margin: 0px 20px 20px 20px;
+  }
   .sectionDos hr {
-    width: 300px;
+    width: 280px;
+  }
+  aside {
+    background-size: cover;
+    padding: 40px 20px 30px 20px;
+  }
+  aside article div {
+    width: 110%;
+  }
+  aside article div img {
+    width: 220px;
+    height: auto;
+  }
+  aside article div p {
+    margin: 0px;
   }
   .sectionSuscripcionUno {
     position: relative;
@@ -864,8 +884,21 @@ footer article div img {
   .sectionContactoUno {
     gap: 20px;
   }
-  .sectionContactoUno .inputCDos, .sectionContactoUno .inputCUno {
+  .sectionContactoUno .formC {
+    gap: 50px;
+  }
+  .sectionContactoUno .formC .inputCDos, .sectionContactoUno .formC .inputCUno {
     width: 280px;
+  }
+  .galerias {
+    justify-content: center;
+  }
+  .galerias .imgGaleria1 {
+    display: none;
+  }
+  .galerias .imgGaleria2, .galerias .imgGaleria1 {
+    width: 190px;
+    height: auto;
   }
   footer {
     flex-direction: column;
@@ -878,16 +911,52 @@ footer article div img {
     flex-direction: row;
     margin: auto;
   }
+  footer article p {
+    width: 80%;
+  }
   footer .lineaFooter {
     display: none;
   }
-  .inputCDos, .inputCUno {
-    width: 280px;
-  }
 }
 @media (max-width: 320px) {
-  .inputFooterUno, .inputFooterDos {
-    width: 240px;
+  .sectionIndexUno {
+    background-size: 200% contain;
+  }
+  .sectionIndexUno .articleUno .titulos h1 {
+    font-size: 2.4rem;
+  }
+  .sectionIndexUno .articleUno .titulos .botonIndex {
+    font-size: 0.8rem;
+    padding: 15px 30px;
+  }
+  .sectionDos hr {
+    width: 230px;
+  }
+  .sectionDos .galerias .imgGaleria2, .sectionDos .galerias .imgGaleria1 {
+    width: 150px;
+    height: auto;
+  }
+  aside {
+    gap: 20px;
+    padding: 0px 20px;
+  }
+  aside article {
+    padding: 0px;
+  }
+  aside article div {
+    width: 305px;
+    gap: 0px;
+    padding: 8px;
+  }
+  aside article div p {
+    width: 397px;
+  }
+  aside article div .flechaIndex {
+    width: 170px;
+  }
+  aside button {
+    font-size: 1rem;
+    padding: 20px 22px;
   }
   .sectionSuscripcionDos .pSeparado {
     font-size: 0.9rem;
@@ -925,6 +994,9 @@ footer article div img {
   }
   .sectionSuscripcionCinco h3 {
     font-size: 1.7rem;
+  }
+  footer article form .inputFooterUno, footer article form .inputFooterDos {
+    width: 240px;
   }
 }
 

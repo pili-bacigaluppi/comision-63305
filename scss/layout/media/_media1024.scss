@@ -11,13 +11,49 @@
             margin-right: 15px;
         }
     }
+    .sectionIndexUno{
+        h1{
+            font-size: 3.7rem;
+        }
+    }
     aside{
         article{
             padding: 0rem 1rem;
         }
         button{
             font-size: 1.4rem;
-            padding: 20px 30px 20px 30px;
+            padding: 20px 30px;
+        }
+    }
+    .sectionSuscripcionUno{
+        .imagenSuscripcion{
+            width: 31.25rem;
+            height: 31.25rem;
+        }
+    }
+    .sectionSuscripcionTres{
+        .articleSuscripcionTres{
+            img{
+                margin-left: 5rem;
+            }
+        }
+        h3{
+            margin-left: 90px;
+        }
+    }
+    .sectionSuscripcionCuatro{
+        h3{
+            margin-left: 30px;
+        }
+    }
+    .sectionContactoUno{
+        .formC{
+            .inputCUno{
+                @include inputContacto(20rem, 3.125rem, .3125rem);
+            }
+            .inputCDos{
+                @include inputContacto(52.5rem, 3.125rem, .3125rem);
+            }
         }
     }
     footer{
@@ -44,32 +80,6 @@
             footer p{
                 font-size: 0.9rem;
             }
-        }
-    }
-    .sectionSuscripcionUno{
-        .imagenSuscripcion{
-            width: 31.25rem;
-            height: 31.25rem;
-        }
-    }
-    .sectionSuscripcionTres{
-        .articleSuscripcionTres{
-            img{
-                margin-left: 5rem;
-            }
-        }
-        h3{
-            margin-left: 90px;
-        }
-    }
-    .sectionSuscripcionCuatro{
-        h3{
-            margin-left: 30px;
-        }
-    }
-    .sectionContactoUno{
-        .inputCUno{
-            @include inputContacto(20rem, 3.125rem, .3125rem);
         }
     }
 }

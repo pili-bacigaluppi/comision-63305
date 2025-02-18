@@ -2,19 +2,4 @@
     @include flexbox(flex, column, center, auto, 3.75rem);
     padding: 1.875rem;
 }
-.galeriaContacto{
-    display: flex;
-    gap: 5%;
-    .imgGaleria1{
-        width: 30%;
-        height: 30%;
-    }
-    .imgGaleria2{
-        @extend .imgGaleria1;
-    }
-}
-.sectionContactoDos{
-    @include flexbox(flex, column, center, baseline, 2.5rem);
-    padding: 2.5rem 0rem 2.5rem 0rem;
-}
 /*           PREGUNTAR EXTEND              */
