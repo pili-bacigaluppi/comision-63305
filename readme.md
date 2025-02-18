@@ -8,3 +8,4 @@ Este proyecto fue desarrollado como parte del curso "Desarrollo Web" de Coderhou
  Para este proyecto utilize:
  - HTML.
  - CSS. 
+ - SCSS.
