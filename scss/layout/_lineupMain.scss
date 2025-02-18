@@ -36,6 +36,9 @@
 .sectionLineupDos{
     @include flexbox(flex, column, center, center, 1.875rem);
     margin-top: 30px;
+    h3{
+        font-size: 1.6rem;
+    }
     article{
         @include flexbox(flex, row, center, center, 2.5rem 1.25rem);
         flex-wrap: wrap;

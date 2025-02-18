@@ -24,10 +24,6 @@
 .sectionDos {
     @include flexbox(flex, column, center, center, 2.5rem);
     padding: 30px;
-    hr{
-        width: 441.68px;
-        border: 0.3px solid map-get($colores, color8 );
-    }
 }
 aside{
     background-image: url(../assets/vista-desktop/pag-principal/fondo-reseñasf.png);

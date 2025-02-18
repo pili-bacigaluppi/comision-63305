@@ -130,10 +130,6 @@ header nav .navbar li a .logo {
   gap: 2.5rem;
   padding: 30px;
 }
-.sectionDos hr {
-  width: 441.68px;
-  border: 0.3px solid #7B6674;
-}
 
 aside {
   background-image: url(../assets/vista-desktop/pag-principal/fondo-reseñasf.png);
@@ -338,6 +334,9 @@ aside article div .flechaIndex {
   justify-content: center;
   gap: 1.875rem;
   margin-top: 30px;
+}
+.sectionLineupDos h3 {
+  font-size: 1.6rem;
 }
 .sectionLineupDos article {
   display: flex;
@@ -604,6 +603,11 @@ footer article div img {
   background-color: #574964;
   color: #FFFFFF;
   font-size: 1.4rem;
+}
+
+.lineaIndex {
+  width: 441.68px;
+  border: 0.3px solid #7B6674;
 }
 
 /*MEDIA QUERIES*/
