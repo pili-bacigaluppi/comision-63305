@@ -15,22 +15,34 @@
         }
     }
     .sectionDos{
-        hr{
+        .lineaIndex{
             width: 280px;
+            background-color: map-get($colores, color10);
+            border: 0.3px solid;
+            margin: 0px;
         }
     }
     aside{
         background-size: cover;
         padding: 40px 20px 30px 20px;
         article{
+            .collapse{
+                .reseñas{
+                    width: 270px;
+                    font-size: 0.9rem;
+                }
+            }
             div{
                 width: 110%;
                 img{
-                    width: 220px;
+                    width: 80px;
                     height: auto;
                 }
                 p{
                     margin: 0px;
+                }
+                .btn .flechaIndex{
+                    width: 60px;
                 }
             }
         }

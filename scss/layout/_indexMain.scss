@@ -1,5 +1,6 @@
 .sectionIndexUno{
     @include flexbox(flex, row, center, center, 0rem);
+    overflow-x: hidden;
     background-image: url(../assets/vista-desktop/pag-principal/fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,6 +11,9 @@
         align-content: center;
         .titulos{
             padding-bottom: 20px;
+            h1{
+                font-weight: 600;
+            }
             .botonIndex{
                 @include botones(map-get($colores, color4 ), map-get($colores, color8 ), 3.0625rem, 1rem, 30px 80px 30px 80px);
                 border: none;
@@ -21,14 +25,18 @@
         }
     }
 }
+
 .sectionDos {
     @include flexbox(flex, column, center, center, 2.5rem);
     padding: 30px;
 }
 aside{
     background-image: url(../assets/vista-desktop/pag-principal/fondo-reseñasf.png);
+    background-size: cover;
     min-height: 690px; 
-    @include flexbox(flex, column, center, center, 3rem);
+    @include flexbox(flex, column, center, center, 2.7rem);
+    overflow-x: hidden;
+    padding: 40px 0px;
     h2{
         color: map-get($colores, color4 );
         font-weight: 600;
@@ -41,13 +49,20 @@ aside{
     article{
         @include flexbox(flex, row, center, center, 1rem);
         width: 100%;
+        .collapse{
+            height: 280px;
+            .reseñas{
+                text-align: left;
+                width: 400px;
+            }
+        }
         div{
             background-color: map-get($colores, color1);
             width: 372px;
-            height: 400px;
+            height: 450px;
             justify-items: center;
             padding-top: 30px;
-            p{
+            .reseñaNormal{
                 font-size: .8375rem;
                 width: 300px;
                 text-align: center;
@@ -57,9 +72,6 @@ aside{
                 border-radius: 47px;
                 width: 106px;
                 height: 103px;
-            }
-            .reseñaHidden{
-                display: none;
             }
             .flechaIndex{
                 display: none;

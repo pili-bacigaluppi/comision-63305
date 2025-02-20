@@ -1,4 +1,15 @@
 @media(max-width: 768px){
+    header{
+        .navbar{
+            div{
+                .navbar-nav{
+                    margin-left: 10px;
+                    gap: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
     .sectionIndexUno{
         img{
             display: none;
@@ -49,9 +60,6 @@
                 overflow-y: hidden;
                 .flechaIndex{
                     display: block;
-                }
-                .reseñaHidden{
-                    display: none;
                 }
                 .reseñaNormal{
                     display: none;

@@ -1,4 +1,8 @@
-.lineaIndex{
-    width: 441.68px;
-    border: 0.3px solid map-get($colores, color8 );
+.sectionDos{
+    .lineaIndex{
+        width: 441.68px;
+        background-color: map-get($colores, color10);
+        border: 0.3px solid;
+        margin: 0px;
+    }
 }

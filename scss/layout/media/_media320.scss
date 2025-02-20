@@ -26,18 +26,29 @@
     }
     aside{
         gap: 20px;
-        padding: 0px 20px;
+        padding: 40px 20px;
         article{
             padding: 0px;
+            .collapse{
+                height: 360px;
+                .reseñas{
+                    width: 220px;
+                }
+            }
             div{
                 width: 305px;
                 gap: 0px;
                 padding: 8px;
                 p{
                     width: 397px;
+                    margin-left: 5px;
                 }
                 .flechaIndex{
-                    width: 170px;
+                    width: 60px;
+                    padding: 0px;
+                }
+                img{
+                    width: 70px;
                 }
             }
         }

@@ -1,24 +1,17 @@
 @media(max-width:1024px){
-    .navbar{
-        display: flex;
-        justify-content: space-between;
-        height: 3.9375rem;
-        .menuPopUp{
-            display: none;
-        }
-        .menuLines{
-            display: block;
-            margin-right: 15px;
-        }
-    }
     .sectionIndexUno{
-        h1{
-            font-size: 3.7rem;
+        .articleUno{
+            h1{
+                font-size: 3.7rem;
+            }
         }
     }
     aside{
         article{
             padding: 0rem 1rem;
+            div{
+                width: 325px;
+            }
         }
         button{
             font-size: 1.4rem;
