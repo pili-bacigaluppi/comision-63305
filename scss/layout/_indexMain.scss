@@ -69,9 +69,10 @@ aside{
                 margin: 30px;
             }
             img{
-                border-radius: 47px;
+                border-radius: 50%;
                 width: 106px;
                 height: 103px;
+                object-fit: cover;
             }
             .flechaIndex{
                 display: none;

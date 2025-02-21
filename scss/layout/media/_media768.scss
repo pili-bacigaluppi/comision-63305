@@ -39,12 +39,6 @@
             width: 350px;
         }
     }
-    .sectionNosotrosUno{ 
-        img{
-        display: none;
-        grid-column:unset;
-        }
-    }
     aside{
         padding: 2.5rem;
         h2{
@@ -119,6 +113,46 @@
             .inputCDos{
                 @include inputContacto(30rem, 3.125rem, .3125rem);
             }
+        }
+    }
+    .sectionNosotrosUno{
+        @include flexbox(flex, column, center, center, 30px);
+        padding: 50px 0px;
+        h2{
+            padding-bottom: 0px;
+        }
+        .textoSB{
+            margin: 0px;
+        }
+        img{
+            display: none;
+        }
+    }
+    .sectionNosotrosDos{
+        .fondoNosotros{
+            width: 700px;
+            p{
+                width: 660px;
+            }
+        }
+        .imagen1Left{
+            @include imgSBLeft(170px, absolute, 11.875rem, 18.2rem, -1.9rem);
+            z-index: 10;
+        }
+        .imagen2Right{
+            @include imgSBRight(150px, absolute, 9.6875rem, 16rem, 33rem);
+        }
+        .imagen3Right{
+            @include imgSBRight(210px, absolute, 8.75rem, -2rem, 30.3rem);
+        }
+        .imagen4Right{
+            @include imgSBRight(200px, absolute, 11.875rem, 6.5rem, 30.1rem);
+        }
+        .imagen5Left{
+            @include imgSBLeft(230px, absolute, 9.6875rem, -6%, -1.5rem);
+        }
+        .imagen6Left{
+            @include imgSBLeft(200px, absolute, 8.75rem, 8.5rem, -0.9rem);
         }
     }
     footer{

@@ -130,6 +130,38 @@
             height: auto;
         }
     }
+    .sectionNosotrosUno{
+        h2{
+            font-size: 1.9rem;
+        }
+        .textoSB{
+            margin-left: 105px;
+            p{
+                width: 390px;
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .sectionNosotrosDos{
+        .fondoNosotros{
+            width: 400px;
+            p{
+                width: 370px;
+                font-size: 1rem;
+            }
+        }
+        .imagen1Left, .imagen2Right, .imagen4Right, .imagen5Left {
+            display: none;
+        } 
+        .imagen3Right{
+            @include imgSBLeft(210px, absolute, 8.75rem, -2.5rem, 28.1rem);
+            transform: rotate(15deg);
+        }
+        .imagen6Left{
+            @include imgSBLeft(200px, absolute, 8.75rem, 16.5rem, 2.6rem);
+            transform: rotate(15deg);
+        }
+    }
     footer{
         flex-direction: column;
         gap: 2rem;

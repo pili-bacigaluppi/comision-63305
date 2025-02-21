@@ -2,15 +2,17 @@ header{
     background-color: map-get($colores, color10 );
     .navbar{
         padding-top: 0px;
-        div{
+        article{
             background-color: map-get($colores, color10 );
             img{
                 height: 60px;
                 width: auto;
                 object-fit: contain;
             }
-            .navbar-toggler-icon{
-                color: white;
+            .navbar-toggler{
+                span.navbar-toggler-icon{
+                    color: white;
+                }
             }
             .navbar-nav{
                 margin-left: 40px;

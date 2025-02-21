@@ -4,6 +4,7 @@
     grid-template-rows: repeat(8, 80px);
     justify-items: center;
     justify-content: center;
+    
     h2{
         font-weight: 600;
         padding-bottom: 80px;
@@ -13,7 +14,7 @@
         align-self: center;
         color: map-get($colores, color7 );
     }
-    p{
+    .textoSB{
         font-size: 1rem;
         text-align: justify;
         width: 31.25rem;
@@ -22,8 +23,7 @@
         align-self: center;
     }
     img{
-        max-width: 31.25rem;
-        min-width: 16.25rem;
+        width: 31.25rem;
         height: 34.375rem;
         grid-column: 5/8;
         grid-row: 1/5;
@@ -36,37 +36,39 @@
     height: 36.5rem;
     display: grid;
     place-content: center;
-    overflow-x: hidden;
+    position: relative;
+    overflow: hidden;
     div{
         background-color: map-get($colores, color5 );
         background-repeat: no-repeat;
         background-size: 100%;
-        width: 1157px;
-        height: 414px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.5rem;
-        text-align: center;
+        width: 72.3125rem;
+        height: 25.875rem;
         display: grid;
         place-content: center;
+        p{
+            font-size: 1.5rem;
+            text-align: center;
+            width: 800px
+        }
     }
     .imagen1Left{
-        @include imgSB(16.25rem, absolute, 11.875rem, -6%, 51rem);
+        @include imgSBLeft(16.25rem, absolute, 11.875rem, -5%, 9rem);
         z-index: 10;
     }
     .imagen2Right{
-        @include imgSB(18.6875rem, absolute, 9.6875rem, 73.2rem, 64rem);
+        @include imgSBRight(18.6875rem, absolute, 9.6875rem, -6rem, 18.6rem);overflow-x: hidden;
     }
     .imagen3Right{
-        @include imgSB(17rem, absolute, 8.75rem, 71rem, 70rem);
+        @include imgSBRight(17rem, absolute, 8.75rem, -3rem, 29.5rem);
     }
     .imagen4Right{
-        @include imgSB(16.25rem, absolute, 11.875rem, 73.5rem, 74rem);
+        @include imgSBRight(16.25rem, absolute, 11.875rem, -5rem, 23rem);
     }
     .imagen5Left{
-        @include imgSB(18.6875rem, absolute, 9.6875rem, -8%, 40.4rem);
+        @include imgSBLeft(18.6875rem, absolute, 9.6875rem, -6%, -1.5rem);
     }
     .imagen6Left{
-        @include imgSB(17rem, absolute, 8.75rem, -10%, 47rem);
+        @include imgSBLeft(17rem, absolute, 8.75rem, -8%, 5.2rem);
     }
 }

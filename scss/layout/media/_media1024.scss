@@ -49,6 +49,48 @@
             }
         }
     }
+    .sectionNosotrosUno{
+        h2{
+            grid-column: 2/6;
+        }
+        img{
+            width: 450px;
+            object-fit: contain;
+            grid-column: 6/7;
+        }
+        .textoSB{
+            grid-column: 3/5;
+            grid-row: 4/6;
+        }
+    }
+    .sectionNosotrosDos{
+        .fondoNosotros{
+            width: 950px;
+            p{
+                font-size: 1.3rem;
+                width: 720px;
+            }
+        }
+        .imagen1Left{
+            @include imgSBLeft(210px, absolute, 11.875rem, -5%, 7.5rem);
+            z-index: 10;
+        }
+        .imagen2Right{
+            @include imgSBRight(230px, absolute, 9.6875rem, -4.5rem, 20.9rem);
+        }
+        .imagen3Right{
+            @include imgSBRight(210px, absolute, 8.75rem, -3rem, 30.3rem);
+        }
+        .imagen4Right{
+            @include imgSBRight(240px, absolute, 11.875rem, -5.7rem, 24rem);
+        }
+        .imagen5Left{
+            @include imgSBLeft(230px, absolute, 9.6875rem, -6%, -1.5rem);
+        }
+        .imagen6Left{
+            @include imgSBLeft(210px, absolute, 8.75rem, -8%, 4.5rem);
+        }
+    }
     footer{
         article{
             div{

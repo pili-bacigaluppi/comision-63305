@@ -61,22 +61,22 @@ header {
 header .navbar {
   padding-top: 0px;
 }
-header .navbar div {
+header .navbar article {
   background-color: #574964;
 }
-header .navbar div img {
+header .navbar article img {
   height: 60px;
   width: auto;
   object-fit: contain;
 }
-header .navbar div .navbar-toggler-icon {
+header .navbar article .navbar-toggler span.navbar-toggler-icon {
   color: white;
 }
-header .navbar div .navbar-nav {
+header .navbar article .navbar-nav {
   margin-left: 40px;
   gap: 30px;
 }
-header .navbar div .navbar-nav .nav-item a {
+header .navbar article .navbar-nav .nav-item a {
   color: #D9D9D9;
 }
 
@@ -179,9 +179,10 @@ aside article div .reseñaNormal {
   margin: 30px;
 }
 aside article div img {
-  border-radius: 47px;
+  border-radius: 50%;
   width: 106px;
   height: 103px;
+  object-fit: cover;
 }
 aside article div .flechaIndex {
   display: none;
@@ -203,7 +204,7 @@ aside article div .flechaIndex {
   align-self: center;
   color: #9F8383;
 }
-.sectionNosotrosUno p {
+.sectionNosotrosUno .textoSB {
   font-size: 1rem;
   text-align: justify;
   width: 31.25rem;
@@ -212,8 +213,7 @@ aside article div .flechaIndex {
   align-self: center;
 }
 .sectionNosotrosUno img {
-  max-width: 31.25rem;
-  min-width: 16.25rem;
+  width: 31.25rem;
   height: 34.375rem;
   grid-column: 5/8;
   grid-row: 1/5;
@@ -226,63 +226,72 @@ aside article div .flechaIndex {
   height: 36.5rem;
   display: grid;
   place-content: center;
-  overflow-x: hidden;
+  position: relative;
+  overflow: hidden;
 }
 .sectionNosotrosDos div {
   background-color: #C5CBDB;
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 1157px;
-  height: 414px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.5rem;
-  text-align: center;
+  width: 72.3125rem;
+  height: 25.875rem;
   display: grid;
   place-content: center;
+}
+.sectionNosotrosDos div p {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 800px;
 }
 .sectionNosotrosDos .imagen1Left {
   width: 16.25rem;
   position: absolute;
   height: 11.875rem;
-  left: -6%;
-  top: 51rem;
+  left: -5%;
+  top: 9rem;
+  height: auto;
   z-index: 10;
 }
 .sectionNosotrosDos .imagen2Right {
   width: 18.6875rem;
   position: absolute;
   height: 9.6875rem;
-  left: 73.2rem;
-  top: 64rem;
+  right: -6rem;
+  top: 18.6rem;
+  height: auto;
+  overflow-x: hidden;
 }
 .sectionNosotrosDos .imagen3Right {
   width: 17rem;
   position: absolute;
   height: 8.75rem;
-  left: 71rem;
-  top: 70rem;
+  right: -3rem;
+  top: 29.5rem;
+  height: auto;
 }
 .sectionNosotrosDos .imagen4Right {
   width: 16.25rem;
   position: absolute;
   height: 11.875rem;
-  left: 73.5rem;
-  top: 74rem;
+  right: -5rem;
+  top: 23rem;
+  height: auto;
 }
 .sectionNosotrosDos .imagen5Left {
   width: 18.6875rem;
   position: absolute;
   height: 9.6875rem;
-  left: -8%;
-  top: 40.4rem;
+  left: -6%;
+  top: -1.5rem;
+  height: auto;
 }
 .sectionNosotrosDos .imagen6Left {
   width: 17rem;
   position: absolute;
   height: 8.75rem;
-  left: -10%;
-  top: 47rem;
+  left: -8%;
+  top: 5.2rem;
+  height: auto;
 }
 
 .articleLineupUno {
@@ -653,6 +662,74 @@ footer article div img {
     height: 3.125rem;
     border-radius: 0.3125rem;
   }
+  .sectionNosotrosUno h2 {
+    grid-column: 2/6;
+  }
+  .sectionNosotrosUno img {
+    width: 450px;
+    object-fit: contain;
+    grid-column: 6/7;
+  }
+  .sectionNosotrosUno .textoSB {
+    grid-column: 3/5;
+    grid-row: 4/6;
+  }
+  .sectionNosotrosDos .fondoNosotros {
+    width: 950px;
+  }
+  .sectionNosotrosDos .fondoNosotros p {
+    font-size: 1.3rem;
+    width: 720px;
+  }
+  .sectionNosotrosDos .imagen1Left {
+    width: 210px;
+    position: absolute;
+    height: 11.875rem;
+    left: -5%;
+    top: 7.5rem;
+    height: auto;
+    z-index: 10;
+  }
+  .sectionNosotrosDos .imagen2Right {
+    width: 230px;
+    position: absolute;
+    height: 9.6875rem;
+    right: -4.5rem;
+    top: 20.9rem;
+    height: auto;
+  }
+  .sectionNosotrosDos .imagen3Right {
+    width: 210px;
+    position: absolute;
+    height: 8.75rem;
+    right: -3rem;
+    top: 30.3rem;
+    height: auto;
+  }
+  .sectionNosotrosDos .imagen4Right {
+    width: 240px;
+    position: absolute;
+    height: 11.875rem;
+    right: -5.7rem;
+    top: 24rem;
+    height: auto;
+  }
+  .sectionNosotrosDos .imagen5Left {
+    width: 230px;
+    position: absolute;
+    height: 9.6875rem;
+    left: -6%;
+    top: -1.5rem;
+    height: auto;
+  }
+  .sectionNosotrosDos .imagen6Left {
+    width: 210px;
+    position: absolute;
+    height: 8.75rem;
+    left: -8%;
+    top: 4.5rem;
+    height: auto;
+  }
   footer article div .imgFooter img {
     width: 90px;
     margin-left: 10px;
@@ -706,10 +783,6 @@ footer article div img {
   }
   .sectionDos hr {
     width: 350px;
-  }
-  .sectionNosotrosUno img {
-    display: none;
-    grid-column: unset;
   }
   aside {
     padding: 2.5rem;
@@ -782,6 +855,78 @@ footer article div img {
     width: 30rem;
     height: 3.125rem;
     border-radius: 0.3125rem;
+  }
+  .sectionNosotrosUno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0px;
+  }
+  .sectionNosotrosUno h2 {
+    padding-bottom: 0px;
+  }
+  .sectionNosotrosUno .textoSB {
+    margin: 0px;
+  }
+  .sectionNosotrosUno img {
+    display: none;
+  }
+  .sectionNosotrosDos .fondoNosotros {
+    width: 700px;
+  }
+  .sectionNosotrosDos .fondoNosotros p {
+    width: 660px;
+  }
+  .sectionNosotrosDos .imagen1Left {
+    width: 170px;
+    position: absolute;
+    height: 11.875rem;
+    left: 18.2rem;
+    top: -1.9rem;
+    height: auto;
+    z-index: 10;
+  }
+  .sectionNosotrosDos .imagen2Right {
+    width: 150px;
+    position: absolute;
+    height: 9.6875rem;
+    right: 16rem;
+    top: 33rem;
+    height: auto;
+  }
+  .sectionNosotrosDos .imagen3Right {
+    width: 210px;
+    position: absolute;
+    height: 8.75rem;
+    right: -2rem;
+    top: 30.3rem;
+    height: auto;
+  }
+  .sectionNosotrosDos .imagen4Right {
+    width: 200px;
+    position: absolute;
+    height: 11.875rem;
+    right: 6.5rem;
+    top: 30.1rem;
+    height: auto;
+  }
+  .sectionNosotrosDos .imagen5Left {
+    width: 230px;
+    position: absolute;
+    height: 9.6875rem;
+    left: -6%;
+    top: -1.5rem;
+    height: auto;
+  }
+  .sectionNosotrosDos .imagen6Left {
+    width: 200px;
+    position: absolute;
+    height: 8.75rem;
+    left: 8.5rem;
+    top: -0.9rem;
+    height: auto;
   }
   footer article .imgFooter img {
     width: 80px;
@@ -912,6 +1057,44 @@ footer article div img {
     width: 190px;
     height: auto;
   }
+  .sectionNosotrosUno h2 {
+    font-size: 1.9rem;
+  }
+  .sectionNosotrosUno .textoSB {
+    margin-left: 105px;
+  }
+  .sectionNosotrosUno .textoSB p {
+    width: 390px;
+    font-size: 0.9rem;
+  }
+  .sectionNosotrosDos .fondoNosotros {
+    width: 400px;
+  }
+  .sectionNosotrosDos .fondoNosotros p {
+    width: 370px;
+    font-size: 1rem;
+  }
+  .sectionNosotrosDos .imagen1Left, .sectionNosotrosDos .imagen2Right, .sectionNosotrosDos .imagen4Right, .sectionNosotrosDos .imagen5Left {
+    display: none;
+  }
+  .sectionNosotrosDos .imagen3Right {
+    width: 210px;
+    position: absolute;
+    height: 8.75rem;
+    left: -2.5rem;
+    top: 28.1rem;
+    height: auto;
+    transform: rotate(15deg);
+  }
+  .sectionNosotrosDos .imagen6Left {
+    width: 200px;
+    position: absolute;
+    height: 8.75rem;
+    left: 16.5rem;
+    top: 2.6rem;
+    height: auto;
+    transform: rotate(15deg);
+  }
   footer {
     flex-direction: column;
     gap: 2rem;
@@ -956,7 +1139,7 @@ footer article div img {
     padding: 0px;
   }
   aside article .collapse {
-    height: 360px;
+    height: 320px;
   }
   aside article .collapse .reseñas {
     width: 220px;
@@ -1017,6 +1200,38 @@ footer article div img {
   }
   .sectionSuscripcionCinco h3 {
     font-size: 1.7rem;
+  }
+  .sectionNosotrosUno .textoSB {
+    margin-left: 205px;
+  }
+  .sectionNosotrosUno .textoSB p {
+    width: 295px;
+  }
+  .sectionNosotrosDos .fondoNosotros {
+    height: 470px;
+    width: 425px;
+  }
+  .sectionNosotrosDos .fondoNosotros p {
+    width: 300px;
+    margin-bottom: 0px;
+  }
+  .sectionNosotrosDos .imagen3Right {
+    width: 190px;
+    position: absolute;
+    height: 8.75rem;
+    left: -1rem;
+    top: 30.1rem;
+    height: auto;
+    transform: rotate(8deg);
+  }
+  .sectionNosotrosDos .imagen6Left {
+    width: 190px;
+    position: absolute;
+    height: 8.75rem;
+    left: 9.1rem;
+    top: 1rem;
+    height: auto;
+    transform: rotate(8deg);
   }
   footer article form .inputFooterUno, footer article form .inputFooterDos {
     width: 240px;

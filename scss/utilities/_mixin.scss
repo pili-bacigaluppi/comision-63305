@@ -18,12 +18,21 @@
     justify-content: $justify;
     gap: $gap;
 }
-@mixin imgSB($width, $position, $height, $left, $top){
+@mixin imgSBLeft($width, $position, $height, $left, $top){
     width: $width;
     position: $position;
     height: $height;
     left: $left;
     top: $top;
+    height: auto;
+}
+@mixin imgSBRight($width, $position, $height, $right, $top){
+    width: $width;
+    position: $position;
+    height: $height;
+    right: $right;
+    top: $top;
+    height: auto;
 }
 /*        VER MIXIN DE GRID           */
 @mixin botones($bgColor, $color, $borderR, $fontS, $padding){

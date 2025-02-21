@@ -30,7 +30,7 @@
         article{
             padding: 0px;
             .collapse{
-                height: 360px;
+                height: 320px;
                 .reseñas{
                     width: 220px;
                 }
@@ -102,6 +102,32 @@
         }
         h3{
             font-size: 1.7rem;
+        }
+    }
+    .sectionNosotrosUno{
+        .textoSB{
+            margin-left: 205px;
+            p{
+                width: 295px;
+            }
+        }
+    }
+    .sectionNosotrosDos{
+        .fondoNosotros{
+            height: 470px;
+            width: 425px;
+            p{
+                width: 300px;
+                margin-bottom: 0px;
+            }
+        }
+        .imagen3Right{
+            @include imgSBLeft(190px, absolute, 8.75rem, -1rem, 30.1rem);
+            transform: rotate(8deg);
+        }
+        .imagen6Left{
+            @include imgSBLeft(190px, absolute, 8.75rem, 9.1rem, 1rem);
+            transform: rotate(8deg);
         }
     }
     footer{
