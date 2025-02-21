@@ -13,15 +13,10 @@
             }
         }
     }
-    .sectionDos{
-        hr{
-            width: 230px;
-        }
-        .galerias{
-            .imgGaleria2{
-                width: 150px;
-                height: auto;
-            }
+    .galerias{
+        .imgGaleria2{
+            width: 150px;
+            height: auto;
         }
     }
     aside{
@@ -57,14 +52,23 @@
             padding: 20px 22px;
         }
     }
+    .sectionContactoUno{
+        padding: 30px 0px;
+        .formC{
+            padding: 30px 0px;
+        }
+    }
     .sectionSuscripcionDos{
         .pSeparado{
             font-size: 0.9rem;
-            padding: 15px;
+            padding: 20px;
         }
         article{
             div{
                 width: 290px;
+                p{
+                    padding: 0px 20px;
+                }
             }
         }
     }
@@ -90,7 +94,7 @@
             font-weight: 800;
         }
         img{
-            width: 410px;
+            width: 100%;
             height: auto;
             object-fit: contain;
             padding: 0px;
@@ -98,7 +102,9 @@
     }
     .sectionSuscripcionCinco{
         img{
-            width: 340px;
+            width: 320px;
+            height: 165px;
+            object-fit: cover;
         }
         h3{
             font-size: 1.7rem;
@@ -106,10 +112,7 @@
     }
     .sectionNosotrosUno{
         .textoSB{
-            margin-left: 205px;
-            p{
-                width: 295px;
-            }
+            width: 270px;
         }
     }
     .sectionNosotrosDos{
@@ -128,6 +131,53 @@
         .imagen6Left{
             @include imgSBLeft(190px, absolute, 8.75rem, 9.1rem, 1rem);
             transform: rotate(8deg);
+        }
+    }
+    .articleLineupUno{
+        .pLineupHidden{
+            font-size: 1.1rem;
+        }
+        button{
+            width: 120px;
+            font-size: 1rem;
+        }
+    }
+    .sectionLineupUno{
+        .h2Lineup{
+            width: 90%;
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1.06rem;
+            text-align: justify;
+            width: 250px;
+        }
+        .divLineupUno{
+            p{
+                text-align: center;
+            }
+        }
+    }
+    .sectionLineupDos{
+        .articleAlfajores{
+            div{
+                width: 280px;
+                height: 160px;
+                img{
+                    width: 180px;
+                    height: auto;
+                }
+                .imgLineupDiferente1{
+                    width: 200px;
+                    transform: translateY(-15px);
+                }
+                .imgLineupDiferente2{
+                    width: 140px;
+                }
+                .pLineupDiferente{
+                    transform: translateY(-45px);
+                }
+            }
         }
     }
     footer{

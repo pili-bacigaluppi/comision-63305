@@ -155,6 +155,33 @@
             @include imgSBLeft(200px, absolute, 8.75rem, 8.5rem, -0.9rem);
         }
     }
+    .articleLineupUno{
+        p{
+            font-size: 1rem;
+        }
+        button{
+            width: 180px;
+            font-size: 1rem;
+        }
+    }
+    .sectionLineupUno{
+        .imagenLineup{
+            display: none;
+        }
+    }
+    .sectionLineupDos{
+        .articleAlfajores{
+            width: 100%;
+            .imgLineupDiferente1{
+                width: 230px;
+                height: auto;
+                transform: translateY(-25px);
+            }
+            .pLineupDiferente{
+                transform: translateY(-55px);
+            }
+        }
+    }
     footer{
         article{
             .imgFooter img{

@@ -91,6 +91,57 @@
             @include imgSBLeft(210px, absolute, 8.75rem, -8%, 4.5rem);
         }
     }
+    .articleLineupUno{
+        button{
+            width: 13.75rem;
+        }
+    }
+    .sectionLineupUno{
+        @include flexbox(flex, row, center, auto, 0rem);
+        .imagenLineup{
+            width: 35rem;
+            height: 40.9375rem;
+            object-fit: cover;
+        }
+        .articleLineupDos{
+            align-self: flex-end;
+            margin: 1.875rem 1.875rem;
+        }
+    }
+    .sectionLineupDos{
+        @include flexbox(flex, column, center, center, 1.875rem);
+        margin-top: 30px;
+        h3{
+            font-size: 1.6rem;
+        }
+        article{
+            width: 1000px;
+            div{
+                height: 180px;
+                width: 300px;
+                padding: 5px 0px 35px 0px;
+                p{
+                    margin-bottom: 0px;
+                }
+                .pLineupDiferente{
+                    transform: translateY(-30px);
+                }
+                img{
+                    width: 220px;
+                    height: 120px;
+                    object-fit: contain;
+                    margin-bottom: 10px;
+                }
+                .imgLineupDiferente1{
+                    width: 260px;
+                    height: 160px;
+                    object-fit: contain;
+                    margin-bottom: 0px;
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
     footer{
         article{
             div{

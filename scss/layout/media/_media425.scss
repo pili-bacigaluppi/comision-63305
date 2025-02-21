@@ -52,7 +52,7 @@
         height: 650px;
         .imagenSuscripcion{
             height: 100%;
-            width: 425px;
+            width: 100%;
         }
         .divSuscripcionUno{
             position: absolute;
@@ -164,6 +164,49 @@
         .imagen6Left{
             @include imgSBLeft(200px, absolute, 8.75rem, 16.5rem, 2.6rem);
             transform: rotate(15deg);
+        }
+    }
+    .articleLineupUno{
+        .pLineup{
+            display: none;
+        }
+        .pLineupHidden{
+            display: block;
+            font-size: 1.3rem;
+            margin-bottom: 0px;
+        }
+        button{
+            font-size: 1.2rem;
+        }
+    }
+    .sectionLineupUno{
+        margin-top: 30px;
+        .h2Lineup{
+            font-size: 2rem;
+        }
+    }
+    .sectionLineupDos{
+        margin-bottom: 80px;
+        .h3Lineup{
+            font-size: 1.6rem;
+        }
+        .lineaLineup{
+            width: 80%;
+        }
+        .articleAlfajores{
+            div{
+                width: 370px;
+                font-size: 1.1rem;
+                box-shadow: 5px 5px 30px map-get($colores, color11 );
+                .imgLineupDiferente1{
+                    width: 240px;
+                    height: auto;
+                    transform: translateY(-25px);
+                }
+                .pLineupDiferente{
+                    transform: translateY(-65px);
+                }
+            }
         }
     }
     footer{

@@ -305,6 +305,12 @@ aside article div .flechaIndex {
   height: 45px;
   font-size: 1.3rem;
 }
+.articleLineupUno .pLineup {
+  margin-bottom: 0px;
+}
+.articleLineupUno .pLineupHidden {
+  display: none;
+}
 .articleLineupUno button {
   width: 294px;
   height: 32px;
@@ -316,17 +322,17 @@ aside article div .flechaIndex {
   border-radius: 15px;
 }
 
-.sectionLySUno {
+.sectionLineupUno {
   display: grid;
   grid-template-columns: 50% 40%;
   gap: 80px;
 }
-.sectionLySUno img {
+.sectionLineupUno img {
   width: 43.75rem;
   height: 43.75rem;
   object-fit: contain;
 }
-.sectionLySUno article {
+.sectionLineupUno article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -334,9 +340,13 @@ aside article div .flechaIndex {
   gap: 1.875rem;
   text-align: center;
 }
-.sectionLySUno article h2 {
+.sectionLineupUno article h2 {
   font-weight: 800;
   font-size: 2rem;
+}
+.sectionLineupUno article .divLineupUno .pLineupDos {
+  margin-top: 10px;
+  color: #86707E;
 }
 
 .sectionLineupDos {
@@ -357,7 +367,7 @@ aside article div .flechaIndex {
   justify-content: center;
   gap: 2.5rem 1.25rem;
   flex-wrap: wrap;
-  width: 70rem;
+  width: 1200px;
   text-align: center;
 }
 .sectionLineupDos article div {
@@ -369,6 +379,14 @@ aside article div .flechaIndex {
 .sectionLineupDos article div img {
   width: 15.625rem;
   height: 10rem;
+}
+.sectionLineupDos article div .imgLineupDiferente1 {
+  width: 250px;
+  height: auto;
+  transform: translateY(-15px);
+}
+.sectionLineupDos article div .pLineupDiferente {
+  transform: translateY(-45px);
 }
 
 .sectionContactoUno {
@@ -617,11 +635,15 @@ footer article div img {
   font-size: 1.4rem;
 }
 
-.sectionDos .lineaIndex {
+.lineaIndex, .lineaLineup {
   width: 441.68px;
   background-color: #574964;
   border: 0.3px solid;
   margin: 0px;
+}
+
+.lineaLineup {
+  width: 25rem;
 }
 
 /*MEDIA QUERIES*/
@@ -729,6 +751,63 @@ footer article div img {
     left: -8%;
     top: 4.5rem;
     height: auto;
+  }
+  .articleLineupUno button {
+    width: 13.75rem;
+  }
+  .sectionLineupUno {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: auto;
+    gap: 0rem;
+  }
+  .sectionLineupUno .imagenLineup {
+    width: 35rem;
+    height: 40.9375rem;
+    object-fit: cover;
+  }
+  .sectionLineupUno .articleLineupDos {
+    align-self: flex-end;
+    margin: 1.875rem 1.875rem;
+  }
+  .sectionLineupDos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.875rem;
+    margin-top: 30px;
+  }
+  .sectionLineupDos h3 {
+    font-size: 1.6rem;
+  }
+  .sectionLineupDos article {
+    width: 1000px;
+  }
+  .sectionLineupDos article div {
+    height: 180px;
+    width: 300px;
+    padding: 5px 0px 35px 0px;
+  }
+  .sectionLineupDos article div p {
+    margin-bottom: 0px;
+  }
+  .sectionLineupDos article div .pLineupDiferente {
+    transform: translateY(-30px);
+  }
+  .sectionLineupDos article div img {
+    width: 220px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  .sectionLineupDos article div .imgLineupDiferente1 {
+    width: 260px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 0px;
+    transform: translateY(-10px);
   }
   footer article div .imgFooter img {
     width: 90px;
@@ -928,6 +1007,27 @@ footer article div img {
     top: -0.9rem;
     height: auto;
   }
+  .articleLineupUno p {
+    font-size: 1rem;
+  }
+  .articleLineupUno button {
+    width: 180px;
+    font-size: 1rem;
+  }
+  .sectionLineupUno .imagenLineup {
+    display: none;
+  }
+  .sectionLineupDos .articleAlfajores {
+    width: 100%;
+  }
+  .sectionLineupDos .articleAlfajores .imgLineupDiferente1 {
+    width: 230px;
+    height: auto;
+    transform: translateY(-25px);
+  }
+  .sectionLineupDos .articleAlfajores .pLineupDiferente {
+    transform: translateY(-55px);
+  }
   footer article .imgFooter img {
     width: 80px;
     margin: 0;
@@ -951,7 +1051,7 @@ footer article div img {
     font-size: 1rem;
     margin: 0px 20px 20px 20px;
   }
-  .sectionDos .lineaIndex {
+  .sectionDos .lineaIndex, .sectionDos .lineaLineup {
     width: 280px;
     background-color: #574964;
     border: 0.3px solid;
@@ -984,7 +1084,7 @@ footer article div img {
   }
   .sectionSuscripcionUno .imagenSuscripcion {
     height: 100%;
-    width: 425px;
+    width: 100%;
   }
   .sectionSuscripcionUno .divSuscripcionUno {
     position: absolute;
@@ -1099,6 +1199,45 @@ footer article div img {
     height: auto;
     transform: rotate(15deg);
   }
+  .articleLineupUno .pLineup {
+    display: none;
+  }
+  .articleLineupUno .pLineupHidden {
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+  }
+  .articleLineupUno button {
+    font-size: 1.2rem;
+  }
+  .sectionLineupUno {
+    margin-top: 30px;
+  }
+  .sectionLineupUno .h2Lineup {
+    font-size: 2rem;
+  }
+  .sectionLineupDos {
+    margin-bottom: 80px;
+  }
+  .sectionLineupDos .h3Lineup {
+    font-size: 1.6rem;
+  }
+  .sectionLineupDos .lineaLineup {
+    width: 80%;
+  }
+  .sectionLineupDos .articleAlfajores div {
+    width: 370px;
+    font-size: 1.1rem;
+    box-shadow: 5px 5px 30px #000000;
+  }
+  .sectionLineupDos .articleAlfajores div .imgLineupDiferente1 {
+    width: 240px;
+    height: auto;
+    transform: translateY(-25px);
+  }
+  .sectionLineupDos .articleAlfajores div .pLineupDiferente {
+    transform: translateY(-65px);
+  }
   footer {
     flex-direction: column;
     gap: 2rem;
@@ -1128,10 +1267,7 @@ footer article div img {
     font-size: 0.8rem;
     padding: 15px 30px;
   }
-  .sectionDos hr {
-    width: 230px;
-  }
-  .sectionDos .galerias .imgGaleria2, .sectionDos .galerias .imgGaleria1 {
+  .galerias .imgGaleria2, .galerias .imgGaleria1 {
     width: 150px;
     height: auto;
   }
@@ -1168,12 +1304,21 @@ footer article div img {
     font-size: 1rem;
     padding: 20px 22px;
   }
+  .sectionContactoUno {
+    padding: 30px 0px;
+  }
+  .sectionContactoUno .formC {
+    padding: 30px 0px;
+  }
   .sectionSuscripcionDos .pSeparado {
     font-size: 0.9rem;
-    padding: 15px;
+    padding: 20px;
   }
   .sectionSuscripcionDos article div {
     width: 290px;
+  }
+  .sectionSuscripcionDos article div p {
+    padding: 0px 20px;
   }
   .sectionSuscripcionTres h3 {
     font-size: 1.5rem;
@@ -1194,22 +1339,21 @@ footer article div img {
     font-weight: 800;
   }
   .sectionSuscripcionCuatro img {
-    width: 410px;
+    width: 100%;
     height: auto;
     object-fit: contain;
     padding: 0px;
   }
   .sectionSuscripcionCinco img {
-    width: 340px;
+    width: 320px;
+    height: 165px;
+    object-fit: cover;
   }
   .sectionSuscripcionCinco h3 {
     font-size: 1.7rem;
   }
   .sectionNosotrosUno .textoSB {
-    margin-left: 205px;
-  }
-  .sectionNosotrosUno .textoSB p {
-    width: 295px;
+    width: 270px;
   }
   .sectionNosotrosDos .fondoNosotros {
     height: 470px;
@@ -1236,6 +1380,43 @@ footer article div img {
     top: 1rem;
     height: auto;
     transform: rotate(8deg);
+  }
+  .articleLineupUno .pLineupHidden {
+    font-size: 1.1rem;
+  }
+  .articleLineupUno button {
+    width: 120px;
+    font-size: 1rem;
+  }
+  .sectionLineupUno .h2Lineup {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+  .sectionLineupUno p {
+    font-size: 1.06rem;
+    text-align: justify;
+    width: 250px;
+  }
+  .sectionLineupUno .divLineupUno p {
+    text-align: center;
+  }
+  .sectionLineupDos .articleAlfajores div {
+    width: 280px;
+    height: 160px;
+  }
+  .sectionLineupDos .articleAlfajores div img {
+    width: 180px;
+    height: auto;
+  }
+  .sectionLineupDos .articleAlfajores div .imgLineupDiferente1 {
+    width: 200px;
+    transform: translateY(-15px);
+  }
+  .sectionLineupDos .articleAlfajores div .imgLineupDiferente2 {
+    width: 140px;
+  }
+  .sectionLineupDos .articleAlfajores div .pLineupDiferente {
+    transform: translateY(-45px);
   }
   footer article form .inputFooterUno, footer article form .inputFooterDos {
     width: 240px;
