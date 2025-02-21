@@ -52,6 +52,7 @@
         height: 650px;
         .imagenSuscripcion{
             height: 100%;
+            width: 425px;
         }
         .divSuscripcionUno{
             position: absolute;
@@ -102,6 +103,10 @@
             margin-left: 0px;
             font-size: 1.8rem;
         }
+        img{
+            width: 425px;
+            object-fit: cover;
+        }
     }
     .sectionSuscripcionCinco{
         padding: 20px 0px 0px 0px;
@@ -135,9 +140,8 @@
             font-size: 1.9rem;
         }
         .textoSB{
-            margin-left: 105px;
+            width: 390px;
             p{
-                width: 390px;
                 font-size: 0.9rem;
             }
         }

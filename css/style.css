@@ -984,6 +984,7 @@ footer article div img {
   }
   .sectionSuscripcionUno .imagenSuscripcion {
     height: 100%;
+    width: 425px;
   }
   .sectionSuscripcionUno .divSuscripcionUno {
     position: absolute;
@@ -1030,6 +1031,10 @@ footer article div img {
     margin-left: 0px;
     font-size: 1.8rem;
   }
+  .sectionSuscripcionCuatro img {
+    width: 425px;
+    object-fit: cover;
+  }
   .sectionSuscripcionCinco {
     padding: 20px 0px 0px 0px;
     gap: 0px;
@@ -1061,10 +1066,9 @@ footer article div img {
     font-size: 1.9rem;
   }
   .sectionNosotrosUno .textoSB {
-    margin-left: 105px;
+    width: 390px;
   }
   .sectionNosotrosUno .textoSB p {
-    width: 390px;
     font-size: 0.9rem;
   }
   .sectionNosotrosDos .fondoNosotros {
