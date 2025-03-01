@@ -25,24 +25,31 @@
     aside{
         background-size: cover;
         padding: 40px 20px 30px 20px;
-        article{
+        .contenedorAside{
             .collapse{
-                .reseñas{
-                    width: 270px;
-                    font-size: 0.9rem;
+                width: 353px;
+                padding: 0px;
+                margin-bottom: 60px;
+                .card-body{
+                    .reseñas{
+                        width: 330px;
+                    }
+                }
+            }
+            .cardRDiff{
+                width: 353px;
+                padding: 0px;
+                margin-bottom: 85px;
+                .card-body{
+                    .reseñas{
+                        width: 330px;
+                    }
                 }
             }
             div{
-                width: 110%;
-                img{
-                    width: 80px;
-                    height: auto;
-                }
-                p{
-                    margin: 0px;
-                }
-                .btn .flechaIndex{
-                    width: 60px;
+                padding: 0px 0px 0px 15px;
+                .flechaIndex{
+                    padding: 0px;
                 }
             }
         }

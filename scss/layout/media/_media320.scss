@@ -22,14 +22,18 @@
     aside{
         gap: 20px;
         padding: 40px 20px;
-        article{
+        .contenedorAside{
             padding: 0px;
             .collapse{
                 height: 320px;
-                .reseñas{
-                    width: 220px;
+                margin-bottom: 100px;
+                .card-body{
+                    width: 272px;
+                    .reseñas{
+                        width: 220px;
+                    }
                 }
-            }
+                }
             div{
                 width: 305px;
                 gap: 0px;
@@ -44,6 +48,7 @@
                 }
                 img{
                     width: 70px;
+                    height: 70px;
                 }
             }
         }

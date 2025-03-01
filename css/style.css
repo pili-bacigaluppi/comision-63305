@@ -59,7 +59,7 @@ header {
   background-color: #574964;
 }
 header .navbar {
-  padding-top: 0px;
+  padding: 0px;
 }
 header .navbar article {
   background-color: #574964;
@@ -69,14 +69,11 @@ header .navbar article img {
   width: auto;
   object-fit: contain;
 }
-header .navbar article .navbar-toggler span.navbar-toggler-icon {
-  color: white;
-}
-header .navbar article .navbar-nav {
+header .navbar .navbar-nav {
   margin-left: 40px;
   gap: 30px;
 }
-header .navbar article .navbar-nav .nav-item a {
+header .navbar .navbar-nav .nav-item a {
   color: #D9D9D9;
 }
 
@@ -829,11 +826,6 @@ footer article div img {
   }
 }
 @media (max-width: 768px) {
-  header .navbar div .navbar-nav {
-    margin-left: 10px;
-    gap: 10px;
-    padding-bottom: 10px;
-  }
   .sectionIndexUno img {
     display: none;
   }
@@ -872,13 +864,23 @@ footer article div img {
   aside article {
     flex-wrap: wrap;
   }
+  aside article .collapse {
+    height: 200px;
+  }
+  aside article .collapse .card-body {
+    padding: 5px 0px;
+  }
+  aside article .collapse .card-body .reseñas {
+    width: 594px;
+    padding-top: 16px;
+  }
   aside article div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     gap: 0.625rem;
-    width: 80%;
+    width: 624px;
     height: 130px;
     padding: 20px;
     overflow-y: hidden;
@@ -891,7 +893,8 @@ footer article div img {
   }
   aside article div img {
     object-fit: cover;
-    height: 100%;
+    height: 90px;
+    width: 90px;
   }
   aside button {
     width: 100%;
@@ -1061,22 +1064,27 @@ footer article div img {
     background-size: cover;
     padding: 40px 20px 30px 20px;
   }
-  aside article .collapse .reseñas {
-    width: 270px;
-    font-size: 0.9rem;
+  aside .contenedorAside .collapse {
+    width: 353px;
+    padding: 0px;
+    margin-bottom: 60px;
   }
-  aside article div {
-    width: 110%;
+  aside .contenedorAside .collapse .card-body .reseñas {
+    width: 330px;
   }
-  aside article div img {
-    width: 80px;
-    height: auto;
+  aside .contenedorAside .cardRDiff {
+    width: 353px;
+    padding: 0px;
+    margin-bottom: 85px;
   }
-  aside article div p {
-    margin: 0px;
+  aside .contenedorAside .cardRDiff .card-body .reseñas {
+    width: 330px;
   }
-  aside article div .btn .flechaIndex {
-    width: 60px;
+  aside .contenedorAside div {
+    padding: 0px 0px 0px 15px;
+  }
+  aside .contenedorAside div .flechaIndex {
+    padding: 0px;
   }
   .sectionSuscripcionUno {
     position: relative;
@@ -1275,30 +1283,35 @@ footer article div img {
     gap: 20px;
     padding: 40px 20px;
   }
-  aside article {
+  aside .contenedorAside {
     padding: 0px;
   }
-  aside article .collapse {
+  aside .contenedorAside .collapse {
     height: 320px;
+    margin-bottom: 100px;
   }
-  aside article .collapse .reseñas {
+  aside .contenedorAside .collapse .card-body {
+    width: 272px;
+  }
+  aside .contenedorAside .collapse .card-body .reseñas {
     width: 220px;
   }
-  aside article div {
+  aside .contenedorAside div {
     width: 305px;
     gap: 0px;
     padding: 8px;
   }
-  aside article div p {
+  aside .contenedorAside div p {
     width: 397px;
     margin-left: 5px;
   }
-  aside article div .flechaIndex {
+  aside .contenedorAside div .flechaIndex {
     width: 60px;
     padding: 0px;
   }
-  aside article div img {
+  aside .contenedorAside div img {
     width: 70px;
+    height: 70px;
   }
   aside button {
     font-size: 1rem;

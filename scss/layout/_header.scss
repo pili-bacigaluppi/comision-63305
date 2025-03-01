@@ -1,7 +1,7 @@
 header{
     background-color: map-get($colores, color10 );
     .navbar{
-        padding-top: 0px;
+        padding: 0px;
         article{
             background-color: map-get($colores, color10 );
             img{
@@ -9,18 +9,13 @@ header{
                 width: auto;
                 object-fit: contain;
             }
-            .navbar-toggler{
-                span.navbar-toggler-icon{
-                    color: white;
-                }
-            }
-            .navbar-nav{
-                margin-left: 40px;
-                gap: 30px;
-                .nav-item{
-                    a{
-                        color: map-get($colores, color3);
-                    }
+        }
+        .navbar-nav{
+            margin-left: 40px;
+            gap: 30px;
+            .nav-item{
+                a{
+                    color: map-get($colores, color3);
                 }
             }
         }
